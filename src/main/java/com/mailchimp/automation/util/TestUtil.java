@@ -9,19 +9,12 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-import com.mailchimp.automation.base.TestBase;
-
-public class TestUtil extends TestBase{
+public class TestUtil {
 	
 	public static String TESTDATA_SHEET_PATH = "/testdata/TestData.xlsx";
 	
 	static Workbook book;
 	static Sheet sheet;
-	
-	
-	public void switchToFrame(){
-		driver.switchTo().frame("mainpanel");
-	}
 	
 	public static Object[][] getTestData(String sheetName) {
 		FileInputStream file = null;
@@ -52,17 +45,5 @@ public class TestUtil extends TestBase{
 		
 		return data;
 	}
-	
-	/**
-	 * waits up to few seconds to perform action.
-	 */
-	public static void waitFor(double second) {
-		try {
-			Thread.sleep((int) (1000 * second));
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-	
 
 }

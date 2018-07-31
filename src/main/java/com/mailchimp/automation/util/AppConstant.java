@@ -20,6 +20,7 @@ public class AppConstant {
 	
 	public static final String ERROR_LOG_PATH = CURRENT_DIR+"//assets//log//error.log";
 	public static final String TEST_LOG_PATH = CURRENT_DIR+"//assets//log//";
+	public static final String TEST_CACHE_PATH = CURRENT_DIR+"//assets//log//testCache.txt";
 	public static final String SCREEN_SHOT_DIR = CURRENT_DIR+"//assets//screenshots//";
 	public static final String TESTNG_REPORT_DIR = CURRENT_DIR+"//assets//";
 	

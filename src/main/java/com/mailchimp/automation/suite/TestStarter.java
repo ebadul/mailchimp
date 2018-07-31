@@ -43,9 +43,9 @@ public class TestStarter {
 			CreateLogger.enterLogData(AppConstant.ERROR_LOG_PATH,errorMsg);
 		}
 		
-		//this.stop();
 	}
 		
 	public void stop() {
+		TestHelper.getInstance().cleanUpDriver();
 	}
 }

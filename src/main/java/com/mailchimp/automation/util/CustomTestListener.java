@@ -5,15 +5,18 @@ import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
 import com.mailchimp.automation.model.TestStatusReportModel;
+import com.mailchimp.automation.suite.TestHelper;
 
 public class CustomTestListener extends TestListenerAdapter{
 
-public PropertySettings pSettings;
+	private TestHelper testHelper;
+	private PropertySettings pSettings;
 	
 	public CustomTestListener() {
 		this.pSettings = PropertySettings.getInstance();
+		testHelper = TestHelper.getInstance();
 	}
-
+	
 	@Override
 	public void onStart(ITestContext testContext) {
 		testContext.setAttribute("setting", pSettings);
@@ -36,9 +39,9 @@ public PropertySettings pSettings;
 		String strStatus = "Failed";
 		System.out.println("TestCase : "+testName+" is "+strStatus);
 		TestStatusReportModel.addTestStatus(testName,strStatus);
-		if (pSettings.getCurrentDriver() != null ) {
+		if (testHelper.getCurrentDriver() != null ) {
 //			ScreenShot.captureScreen(pSettings.currentDriver, testName + "_after_failure_"+ d.format(new Date()));
-			ScreenShot.captureScreen(pSettings.getCurrentDriver(), testName + "_after_failure");
+			ScreenShot.captureScreen(testHelper.getCurrentDriver(), testName + "_after_failure");
 		}
 	}
 
@@ -49,8 +52,8 @@ public PropertySettings pSettings;
 		String strStatus = "Passed";
 		System.out.println("TestCase : "+testName+" is "+strStatus);
 		TestStatusReportModel.addTestStatus(testName,strStatus);
-		if (pSettings.getCurrentDriver() != null ) {
-			ScreenShot.captureScreen(pSettings.getCurrentDriver(), testName + "_after_success");
+		if (testHelper.getCurrentDriver() != null ) {
+			ScreenShot.captureScreen(testHelper.getCurrentDriver(), testName + "_after_success");
 //			ScreenShot.captureScreen(pSettings.currentDriver, testName + "_after_success_"+ d.format(new Date()));
 		}
 	}

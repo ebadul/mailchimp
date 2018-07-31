@@ -7,8 +7,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-import org.openqa.selenium.WebDriver;
-
 
 public class PropertySettings {
 	
@@ -33,7 +31,6 @@ public class PropertySettings {
 	private String reportTime; //yyyy-MM-dd-hh-mm-ss
 	private String year;
 	private String month;
-	private WebDriver mDriver;
 	//private SessionBean session;
 	
 	private String messageNotSupport = "NotSupportedInfoWillGoesHere";
@@ -43,10 +40,10 @@ public class PropertySettings {
 	public static PropertySettings getInstance() {
 	      if(instance == null) {
 	         instance = new PropertySettings();
-	         instance.loadData();
+	         //instance.loadData();
 	      }
 	      return instance;
-	   }
+	}
 	/** 
 	 * construct setting information
 	 **/
@@ -283,14 +280,6 @@ public class PropertySettings {
 		System.out.println(getMailFrom());
 		System.out.println(getMailPassword());
 		System.out.println(getMailTo());
-	}
-
-	public void setWebDriver(WebDriver driver) {
-		mDriver = driver;
-	}
-	
-	public WebDriver getCurrentDriver() {
-		return mDriver;
 	}
 
 }
