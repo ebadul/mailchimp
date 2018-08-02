@@ -72,7 +72,7 @@ public class TestHelper {
 		if(null != mDriver) {
 			mDriver.manage().window().maximize();
 			mDriver.manage().deleteAllCookies();
-			//driver.manage().timeouts().pageLoadTimeout(AppConstant.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+			//mDriver.manage().timeouts().pageLoadTimeout(AppConstant.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 			mDriver.manage().timeouts().implicitlyWait(AppConstant.IMPLICIT_WAIT, TimeUnit.SECONDS);
 			
 			mDriver.get(prop.getProperty("url"));

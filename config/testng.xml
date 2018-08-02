@@ -3,7 +3,6 @@
 <suite name="MailChimp_Demo_QA_Automation_Test_Report" verbose="1" preserve-order="true">
 	<listeners>
         <listener class-name="com.mailchimp.automation.reports.CustomReporter" />
-        <listener class-name='com.mailchimp.automation.reports.CustomReporterListener'/>
     </listeners>
     
     <test name="Test Automation MailChimp">
