@@ -1,7 +1,5 @@
 package com.mailchimp.automation.pages;
 
-import com.mailchimp.automation.util.TestUtil;
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -12,29 +10,37 @@ public class HomePage extends PageBase {
 
 	@FindBy(partialLinkText = "About MailChimp")
 	WebElement aboutLink;
-	
+
+	@FindBy(partialLinkText = "Log In")
+	WebElement loginLink;
+
 	// Initializing the Page Objects:
 	public HomePage() {
 		super();
 		PageFactory.initElements(driver, this);
 	}
-	
-	public String verifyHomePageTitle(){
+
+	public String verifyHomePageTitle() {
 		return driver.getTitle();
 	}
-	
-	public void scrollToAboutLink(){
+
+	public void scrollToAboutLink() {
 		Actions actions = new Actions(driver);
-        actions.moveToElement(aboutLink);
-        //actions.build().perform();
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
+		actions.moveToElement(aboutLink);
+		// actions.build().perform();
+		actions.sendKeys(Keys.PAGE_DOWN).perform();
 	}
-	
-	public AboutPage clickOnAboutLink(){
+
+	public AboutPage clickOnAboutLink() {
 		waitFor(3);
 		aboutLink.click();
-		
 		return new AboutPage();
+	}
+
+	public LoginPage clickOnLoginLink() {
+		waitFor(1);
+		loginLink.click();
+		return new LoginPage();
 	}
 	
 }
