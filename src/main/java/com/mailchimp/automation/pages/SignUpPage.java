@@ -23,6 +23,24 @@ public class SignUpPage extends PageBase{
 	@FindBy(xpath = "//button[@id='create-account']")
 	WebElement submitButton;
 	
+	@FindBy(xpath = "//li[contains(text(),'Please check your entry and try again.')]")
+	WebElement errorMsgTop;
+	
+	@FindBy(xpath = "//span[@class='invalid-error']")
+	WebElement errorMsgEmail;
+	
+	@FindBy(xpath = "//span[contains(text(),'Another user with this username already exists. Ma')]")
+	WebElement errorMsgUserName;
+	
+	@FindBy(xpath = "//h4[contains(text(),\"Your password is secure and you're all set!\")]")
+	WebElement readyToGoMsg;
+	
+	@FindBy(xpath = "//button[@id='create-account']")
+	public WebElement getStarted;
+	
+	@FindBy(xpath = "//h1[@class='!margin-bottom--lv3 no-transform center-on-medium']")
+	public WebElement successMsg;
+	
 	CustomeXpath xpath;
 	HomePage homePage;
 	
@@ -64,6 +82,22 @@ public class SignUpPage extends PageBase{
 			linkToLogIn.click();
 			return driver.getTitle();
 			
+		}
+		
+		public String getErrorTopMsg() {
+			return errorMsgTop.getText();
+		}
+		
+		public String getErrorEmailMsg() {
+			return errorMsgEmail.getText();
+		}
+		
+		public String getErrorUserNameMsg() {
+			return errorMsgUserName.getText();
+		}
+		
+		public String getrReadyToGoMsg() {
+			return readyToGoMsg.getText();
 		}
 		
 		public void driverClose()

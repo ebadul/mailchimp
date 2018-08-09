@@ -7,7 +7,7 @@
     
     <test name="Test Automation MailChimp">
         <classes>
-        	<class name="com.mailchimp.automation.testcases.HomePageTest"/>
+        	<class name="com.mailchimp.automation.testcases.SignUpPageTest"/>
         </classes>
     </test>
 </suite>

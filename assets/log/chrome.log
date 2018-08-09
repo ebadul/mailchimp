@@ -1,4 +1,4 @@
------------------------Thu Aug 09 17:12:51 BDT 2018----------------------
+-----------------------Thu Aug 09 18:24:34 BDT 2018----------------------
 
 Executed Suite Name : MailChimp_Demo_QA_Automation_Test_Report
 
@@ -6,31 +6,13 @@ Executed Test Name : Test Automation MailChimp
 
 ----------------------------------
 
-Executed TestCase Name : verifyHomePageTitleTest, Status : Passed
+Executed TestCase Name : signUp_With_Valid_Email_And_UserName_Test, Status : Passed
 Message: null
 
-Executed TestCase Name : verifyLearningTitleTest, Status : Passed
+Executed TestCase Name : signUp_With_Invalid_Email_And_Existing_UserName_Test, Status : Passed
 Message: null
 
-Executed TestCase Name : verifySignUpTitleTest, Status : Passed
-Message: null
-
-Executed TestCase Name : verifySupportTitleTest, Status : Passed
-Message: null
-
-Executed TestCase Name : verifyLoginTitleTest, Status : Passed
-Message: null
-
-Executed TestCase Name : verifyPricingTitleTest, Status : Passed
-Message: null
-
-Executed TestCase Name : verifyWhatsNewTitleTest, Status : Passed
-Message: null
-
-Executed TestCase Name : verifyBlogTitleTest, Status : Passed
-Message: null
-
-Executed TestCase Name : verifyFeaturesTitleTest, Status : Passed
+Executed TestCase Name : signUp_With_Invalid_Email_Test, Status : Passed
 Message: null
 
 ----------------------------------
@@ -43,20 +25,20 @@ Tests suite 'MailChimp_Demo_QA_Automation_Test_Report' for chrome browser
 
 Summary for Test: Test Automation MailChimp
 -----------------------------------------------
-Passed - 9
+Passed - 3
 Skipped - 0
 Failed - 0
-Total test case run - 9
+Total test case run - 3
 -----------------------------------------------
 ***https://mailchimp.com/***
 
 ==================================
 Test Result Summary: chrome browser
 ----------------------------------
-Total Passed: 9
+Total Passed: 3
 Total Skipped: 0
 Total Failed: 0
-Total Run: 9
+Total Run: 3
 ==================================
 
 ----------------------------------
