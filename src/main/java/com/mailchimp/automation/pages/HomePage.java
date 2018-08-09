@@ -41,6 +41,10 @@ public class HomePage extends PageBase {
 		PageFactory.initElements(driver, this);
 	}
 	
+	public void goToHomePage() {
+		driver.get("https://mailchimp.com");
+	}
+	
 	public String clickOnLearningLink(){
 		waitFor(3);
 		learningLink.click();

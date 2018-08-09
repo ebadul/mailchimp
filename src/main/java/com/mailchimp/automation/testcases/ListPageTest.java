@@ -39,9 +39,7 @@ public class ListPageTest {
 	
 	@AfterMethod
 	public void cleanUp() {
-		
 	
-		
 	}
 
 }

@@ -57,8 +57,11 @@ public class SignUpPage extends PageBase{
 		
 		public String signUp(String email, String userName, String password) {
 			try {
+				emailElement.clear();
 				emailElement.sendKeys(email);
+				userNameElement.clear();
 				userNameElement.sendKeys(userName);
+				passWordElement.clear();
 				passWordElement.sendKeys(password);
 				xpath.waitSomeSec(3, submitButton);		
 				submitButton.click();

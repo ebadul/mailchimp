@@ -1,11 +1,13 @@
 package com.mailchimp.automation.testcases;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.mailchimp.automation.pages.HomePage;
 import com.mailchimp.automation.pages.SignUpPage;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 public class SignUpPageTest {
 	
 		public SignUpPage page;
@@ -15,7 +17,7 @@ public class SignUpPageTest {
 			super();
 		}
 		
-		@BeforeSuite
+		@BeforeTest
 		public void setUp() {
 			page = new SignUpPage();
 			homePage = new HomePage();
@@ -82,7 +84,7 @@ public class SignUpPageTest {
 		}
 		
 		
-		@Test(priority = 3)
+		/*@Test(priority = 3)
 		public void signUp_With_Valid_Email_And_UserName_Test() {
 			page.driver.navigate().refresh();
 			page.signUp("maichimp.roni1201@gmail.com", "ronisaha331876", "11M@rch1994");
@@ -97,7 +99,7 @@ public class SignUpPageTest {
 				System.out.println("Test Passed");
 			}
 			
-		}
+		}*/
 		
 		
 

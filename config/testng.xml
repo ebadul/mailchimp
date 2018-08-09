@@ -7,7 +7,25 @@
     
     <test name="Test Automation MailChimp">
         <classes>
-        	<class name="com.mailchimp.automation.testcases.SignUpPageTest"/>
+        	<class name="com.mailchimp.automation.testcases.HomePageTest"/>    	  	
         </classes>
     </test>
+ 
+      <test name="Test Automation MailChimp2">
+        <classes>        
+        	<class name="com.mailchimp.automation.testcases.LoginPageTest"/>   	
+        </classes>
+    </test> 
+    <test name="Test Automation MailChimp3">
+        <classes>
+        	<class name="com.mailchimp.automation.testcases.SignUpPageTest"/>    	  	
+        </classes>
+    </test>
+ 
+      <test name="Test Automation MailChimp4">
+        <classes>        
+        	<class name="com.mailchimp.automation.testcases.DashBoardPageTest"/>   	
+        </classes>
+    </test> 
+    
 </suite>

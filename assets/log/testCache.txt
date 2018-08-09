@@ -273,3 +273,190 @@ Total Skipped: 0
 Total Failed: 0
 Total Run: 3
 ==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 2
+Total Skipped: 0
+Total Failed: 1
+Total Run: 3
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 1
+Total Skipped: 0
+Total Failed: 2
+Total Run: 3
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 5
+Total Skipped: 0
+Total Failed: 0
+Total Run: 5
+==================================
+
+***null***
+
+==================================
+Test Result Summary: null browser
+----------------------------------
+Total Passed: 5
+Total Skipped: 0
+Total Failed: 0
+Total Run: 5
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 5
+Total Skipped: 0
+Total Failed: 0
+Total Run: 5
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 5
+Total Skipped: 0
+Total Failed: 0
+Total Run: 5
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 5
+Total Skipped: 0
+Total Failed: 0
+Total Run: 5
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 0
+Total Skipped: 9
+Total Failed: 0
+Total Run: 9
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 0
+Total Skipped: 9
+Total Failed: 0
+Total Run: 9
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 7
+Total Skipped: 0
+Total Failed: 0
+Total Run: 7
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 0
+Total Skipped: 9
+Total Failed: 0
+Total Run: 9
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 1
+Total Skipped: 8
+Total Failed: 0
+Total Run: 9
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 1
+Total Skipped: 8
+Total Failed: 0
+Total Run: 9
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 9
+Total Skipped: 0
+Total Failed: 0
+Total Run: 9
+==================================
+
+***null***
+
+==================================
+Test Result Summary: null browser
+----------------------------------
+Total Passed: 0
+Total Skipped: 16
+Total Failed: 0
+Total Run: 16
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 16
+Total Skipped: 0
+Total Failed: 0
+Total Run: 16
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 3
+Total Skipped: 13
+Total Failed: 13
+Total Run: 29
+==================================

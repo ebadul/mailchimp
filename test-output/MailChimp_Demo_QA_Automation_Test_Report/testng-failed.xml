@@ -8,11 +8,36 @@
     <classes>
       <class name="com.mailchimp.automation.testcases.HomePageTest">
         <methods>
+          <include name="verifyBlogTitleTest"/>
           <include name="verifyHomePageTitleTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="verifyWhatsNewTitleTest"/>
+          <include name="verifyLearningTitleTest"/>
+          <include name="verifyPricingTitleTest"/>
+          <include name="verifyFeaturesTitleTest"/>
+          <include name="verifySignUpTitleTest"/>
+          <include name="verifySupportTitleTest"/>
+          <include name="verifyLoginTitleTest"/>
         </methods>
       </class> <!-- com.mailchimp.automation.testcases.HomePageTest -->
     </classes>
   </test> <!-- Test Automation MailChimp(failed) -->
+  <test name="Test Automation MailChimp2(failed)">
+    <classes>
+      <class name="com.mailchimp.automation.testcases.LoginPageTest">
+        <methods>
+          <include name="linkPrivacy"/>
+          <include name="setUp"/>
+          <include name="linkTermTest"/>
+          <include name="linkForgetPasswordTest"/>
+          <include name="logInPageTitleTest"/>
+          <include name="linkCookieTest"/>
+          <include name="linkCreateAccountTest"/>
+          <include name="linkForgetUserNameTest"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.mailchimp.automation.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Test Automation MailChimp2(failed) -->
 </suite> <!-- Failed suite [MailChimp_Demo_QA_Automation_Test_Report] -->

@@ -38,7 +38,5 @@ public class TemplatePageTest {
 	@AfterMethod
 	public void cleanUp() {
 		
-	
-		
 	}
 }

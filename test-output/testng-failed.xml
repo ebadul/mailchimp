@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test name="Default test(failed)">
+<suite name="Failed suite [MailChimp_Demo_QA_Automation_Test_Report]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.mailchimp.automation.reports.CustomReporter"/>
+  </listeners>
+  <test name="Test Automation MailChimp(failed)">
     <classes>
       <class name="com.mailchimp.automation.testcases.HomePageTest">
         <methods>
@@ -19,5 +22,22 @@
         </methods>
       </class> <!-- com.mailchimp.automation.testcases.HomePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test Automation MailChimp(failed) -->
+  <test name="Test Automation MailChimp2(failed)">
+    <classes>
+      <class name="com.mailchimp.automation.testcases.LoginPageTest">
+        <methods>
+          <include name="linkPrivacy"/>
+          <include name="setUp"/>
+          <include name="linkTermTest"/>
+          <include name="linkForgetPasswordTest"/>
+          <include name="logInPageTitleTest"/>
+          <include name="linkCookieTest"/>
+          <include name="linkCreateAccountTest"/>
+          <include name="linkForgetUserNameTest"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.mailchimp.automation.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Test Automation MailChimp2(failed) -->
+</suite> <!-- Failed suite [MailChimp_Demo_QA_Automation_Test_Report] -->
