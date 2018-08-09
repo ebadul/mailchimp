@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 
 import com.mailchimp.automation.pages.DashBoardPage;
 import com.mailchimp.automation.pages.HomePage;
-import com.mailchimp.automation.pages.ListPage;
 import com.mailchimp.automation.pages.LoginPage;
 import com.mailchimp.automation.pages.TemplatePage;
 

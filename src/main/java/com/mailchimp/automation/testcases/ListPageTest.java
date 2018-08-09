@@ -3,8 +3,6 @@ package com.mailchimp.automation.testcases;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
-import com.mailchimp.automation.pages.CampaignPage;
 import com.mailchimp.automation.pages.DashBoardPage;
 import com.mailchimp.automation.pages.HomePage;
 import com.mailchimp.automation.pages.ListPage;

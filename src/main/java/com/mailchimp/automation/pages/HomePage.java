@@ -46,7 +46,6 @@ public class HomePage extends PageBase {
 	public SignUpPage clickOnSignUpLink(){
 		waitFor(3);
 		signUpLink.click();
-		
 		return new SignUpPage();
 	}
 	public LoginPage clickOnLoginLink(){

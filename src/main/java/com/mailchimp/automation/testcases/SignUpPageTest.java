@@ -2,15 +2,14 @@ package com.mailchimp.automation.testcases;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import com.mailchimp.automation.pages.LoginPage;
+import com.mailchimp.automation.pages.HomePage;
 import com.mailchimp.automation.pages.SignUpPage;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 public class SignUpPageTest {
 	
 		public SignUpPage page;
+		HomePage homePage;
 		
 		public SignUpPageTest() {
 			super();
@@ -19,6 +18,8 @@ public class SignUpPageTest {
 		@BeforeSuite
 		public void setUp() {
 			page = new SignUpPage();
+			homePage = new HomePage();
+			page = homePage.clickOnSignUpLink();
 		}
 		
 		@Test(priority = 0)

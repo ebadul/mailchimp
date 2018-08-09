@@ -2,11 +2,52 @@ package com.mailchimp.automation.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.mailchimp.automation.util.CustomeXpath;
 
 public class ListPage extends PageBase{
+	
+	@FindBy(xpath = "//a[@id='add-list-btn']")
+	WebElement createList;
+	
+	@FindBy(xpath = "//a[@class='new-list-button button p0']")
+	WebElement createList1;
+	
+	@FindBy(xpath = "//input[@id='name']")
+	WebElement listName;
+	
+	@FindBy(xpath = "//input[@id='default-fromemail']")
+	WebElement fromEmail;
+	
+	@FindBy(xpath = "//input[@id='from_name']")
+	WebElement fromName;
+	
+	@FindBy(xpath = "//textarea[@id='description']")
+	WebElement description;
+	
+	@FindBy(xpath = "//input[@id='company']")
+	WebElement company;
+	
+	@FindBy(xpath = "//input[@id='address1']")
+	WebElement address1;
+	
+	@FindBy(xpath = "//input[@id='city']")
+	WebElement city;
+	
+	@FindBy(xpath = "//input[@id='zip']")
+	WebElement zip;
+	
+	@FindBy(xpath = "//table[@id='country']")
+	WebElement country;
+	
+	@FindBy(xpath = "//td[text()='India']")
+	WebElement countryName;
+	
+	@FindBy(xpath = "//button[@id='new-list-save']")
+	WebElement newListSave;
+	
 	CustomeXpath xpath;
 	Actions actions = new Actions(driver);
 	
@@ -18,57 +59,30 @@ public class ListPage extends PageBase{
 	}
 	
 	
-public void createNewList(String listNameString) {
-		
-		WebElement createList = xpath.selectItemByText("a","Create List");
-		createList.click();
-		
-		WebElement createList1 = xpath.selectItemByTagContain("a","class", "new-list-button button p0");
+public void createNewList(String listNameString) {	
+		createList.click();		
 		xpath.waitSomeSec(5,createList1 );
-		createList1.click();
-		
-		WebElement listName = xpath.selectItemByTagContain("input","id","name");
+		createList1.click();	
 		listName.clear();
-		listName.sendKeys(listNameString);
-		
-		WebElement fromEmail = xpath.selectItemByTagContain("input","id","default-fromemail");
+		listName.sendKeys(listNameString);	
 		fromEmail.clear();
-		fromEmail.sendKeys("mailchimp.roni@gmail.com");
-		
-		WebElement fromName = xpath.selectItemByTagContain("input","id","from_name");
+		fromEmail.sendKeys("mailchimp.roni@gmail.com");	
 		fromName.clear();
-		fromName.sendKeys("Automation Testing Group");
-		
-		WebElement description = xpath.selectItemByTagContain("textarea","id","description");
+		fromName.sendKeys("Automation Testing Group");	
 		description.clear();
-		description.sendKeys("You are receiving this email because you are awesome");
-		
-		WebElement company = xpath.selectItemByTagContain("input","id","company");
+		description.sendKeys("You are receiving this email because you are awesome");		
 		company.clear();
-		company.sendKeys("Robot Company");
-		
-		WebElement address1 = xpath.selectItemByTagContain("input","id","address1");
+		company.sendKeys("Robot Company");		
 		address1.clear();
-		address1.sendKeys("Mirpur-1");
-		
-		WebElement city = xpath.selectItemByTagContain("input","id","city");
+		address1.sendKeys("Mirpur-1");		
 		city.clear();
-		city.sendKeys("Dhaka");
-		
-		WebElement zip = xpath.selectItemByTagContain("input","id","zip");
+		city.sendKeys("Dhaka");		
 		zip.clear();
-		zip.sendKeys("1226");
-		
-		WebElement country = xpath.selectItemByTagContain("table","id","country");
-		country.click();
-		
-		WebElement countryName = xpath.selectItemByText("td","Belarus");
+		zip.sendKeys("1226");		
+		country.click();	
 		xpath.waitSomeSec(5, countryName);
 		countryName.click();
-		
-		WebElement newListSave = xpath.selectItemByText("button","Save");
 		newListSave.click();
-
 	}
 
 }

@@ -1,6 +1,5 @@
 package com.mailchimp.automation.testcases;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeSuite;
@@ -9,7 +8,6 @@ import org.testng.annotations.Test;
 import com.mailchimp.automation.pages.DashBoardPage;
 import com.mailchimp.automation.pages.HomePage;
 import com.mailchimp.automation.pages.LoginPage;
-import com.mailchimp.automation.pages.SignUpPage;
 
 public class DashBoardPageTest {
 	
