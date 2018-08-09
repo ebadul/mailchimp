@@ -130,3 +130,80 @@ Total Skipped: 0
 Total Failed: 0
 Total Run: 1
 ==================================
+
+***null***
+
+==================================
+Test Result Summary: null browser
+----------------------------------
+Total Passed: 0
+Total Skipped: 1
+Total Failed: 0
+Total Run: 1
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 1
+Total Skipped: 0
+Total Failed: 0
+Total Run: 1
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 0
+Total Skipped: 2
+Total Failed: 0
+Total Run: 2
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 4
+Total Skipped: 0
+Total Failed: 0
+Total Run: 4
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 7
+Total Skipped: 0
+Total Failed: 2
+Total Run: 9
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 7
+Total Skipped: 0
+Total Failed: 2
+Total Run: 9
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 9
+Total Skipped: 0
+Total Failed: 0
+Total Run: 9
+==================================

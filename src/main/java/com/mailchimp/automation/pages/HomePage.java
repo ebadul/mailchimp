@@ -17,12 +17,60 @@ public class HomePage extends PageBase {
 	@FindBy(partialLinkText = "Log In")
 	WebElement loginLink;
 	
+	@FindBy(partialLinkText = "Pricing")
+	WebElement pricingLink;
+	
+	@FindBy(partialLinkText = "Features")
+	WebElement featureLink;
+	
+	@FindBy(partialLinkText = "Support")
+	WebElement supportLink;
+	
+	@FindBy(partialLinkText = "Learning")
+	WebElement learningLink;
+	
+	@FindBy(partialLinkText = "Blog")
+	WebElement blogLink;
+	
+	@FindBy(xpath = "//a[@class='item whatsNewNavUnvisited']")
+	WebElement whatsNewLink;
 	
 	// Initializing the Page Objects:
 	public HomePage() {
 		super();
 		PageFactory.initElements(driver, this);
+	}
+	
+	public String clickOnLearningLink(){
+		waitFor(3);
+		learningLink.click();
+		return driver.getTitle();
+	}
 
+	public String clickOnBlogLink(){
+		waitFor(3);
+		blogLink.click();
+		return driver.getTitle();
+	}
+	public String clickOnWhatsNewLinkLink(){
+		waitFor(3);
+		whatsNewLink.click();
+		return driver.getTitle();
+	}
+	public String clickOnPricingLink(){
+		waitFor(3);
+		pricingLink.click();
+		return driver.getTitle();
+	}
+	public String clickOnFeatureLink(){
+		waitFor(3);
+		featureLink.click();
+		return driver.getTitle();
+	}
+	public String clickOnSupportLink(){
+		waitFor(3);
+		supportLink.click();
+		return driver.getTitle();
 	}
 	
 	public String verifyHomePageTitle(){
@@ -32,7 +80,6 @@ public class HomePage extends PageBase {
 	public void scrollToAboutLink(){
 		Actions actions = new Actions(driver);
         actions.moveToElement(aboutLink);
-        //actions.build().perform();
         actions.sendKeys(Keys.PAGE_DOWN).perform();
 	}
 	

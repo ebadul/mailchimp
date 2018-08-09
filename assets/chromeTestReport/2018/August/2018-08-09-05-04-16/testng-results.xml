@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-08-09T11:04:43Z" name="MailChimp_Demo_QA_Automation_Test_Report" finished-at="2018-08-09T11:12:51Z" duration-ms="488644">
+    <groups>
+    </groups>
+    <test started-at="2018-08-09T11:04:43Z" name="Test Automation MailChimp" finished-at="2018-08-09T11:12:51Z" duration-ms="488644">
+      <class name="com.mailchimp.automation.testcases.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:04:43Z" name="setUp" finished-at="2018-08-09T17:04:43Z" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageTitleTest()[pri:1, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:04:43Z" name="verifyHomePageTitleTest" finished-at="2018-08-09T17:04:43Z" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:04:43Z" name="tearDown" finished-at="2018-08-09T17:04:49Z" duration-ms="5233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:04:49Z" name="setUp" finished-at="2018-08-09T17:04:49Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPricingTitleTest()[pri:2, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:04:49Z" name="verifyPricingTitleTest" finished-at="2018-08-09T17:04:56Z" duration-ms="6993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPricingTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:04:56Z" name="tearDown" finished-at="2018-08-09T17:04:57Z" duration-ms="910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyFeaturesTitleTest()[pri:3, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:04:57Z" name="verifyFeaturesTitleTest" finished-at="2018-08-09T17:07:09Z" duration-ms="132097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFeaturesTitleTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:04:57Z" name="setUp" finished-at="2018-08-09T17:04:57Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:07:09Z" name="tearDown" finished-at="2018-08-09T17:07:11Z" duration-ms="2164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:07:11Z" name="setUp" finished-at="2018-08-09T17:07:11Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLearningTitleTest()[pri:4, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:07:11Z" name="verifyLearningTitleTest" finished-at="2018-08-09T17:07:52Z" duration-ms="40436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLearningTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:07:52Z" name="tearDown" finished-at="2018-08-09T17:07:55Z" duration-ms="2591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:07:55Z" name="setUp" finished-at="2018-08-09T17:07:55Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBlogTitleTest()[pri:5, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:07:55Z" name="verifyBlogTitleTest" finished-at="2018-08-09T17:08:17Z" duration-ms="21727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBlogTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:08:17Z" name="tearDown" finished-at="2018-08-09T17:08:18Z" duration-ms="1118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyWhatsNewTitleTest()[pri:6, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:08:18Z" name="verifyWhatsNewTitleTest" finished-at="2018-08-09T17:11:59Z" duration-ms="221050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhatsNewTitleTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:08:18Z" name="setUp" finished-at="2018-08-09T17:08:18Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:12:00Z" name="tearDown" finished-at="2018-08-09T17:12:01Z" duration-ms="1718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:12:01Z" name="setUp" finished-at="2018-08-09T17:12:01Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginTitleTest()[pri:7, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:12:01Z" name="verifyLoginTitleTest" finished-at="2018-08-09T17:12:27Z" duration-ms="25331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:12:27Z" name="tearDown" finished-at="2018-08-09T17:12:32Z" duration-ms="4671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:12:32Z" name="setUp" finished-at="2018-08-09T17:12:32Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySignUpTitleTest()[pri:8, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:12:32Z" name="verifySignUpTitleTest" finished-at="2018-08-09T17:12:39Z" duration-ms="6998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:12:39Z" name="tearDown" finished-at="2018-08-09T17:12:42Z" duration-ms="2389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:12:42Z" name="setUp" finished-at="2018-08-09T17:12:42Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySupportTitleTest()[pri:9, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:12:42Z" name="verifySupportTitleTest" finished-at="2018-08-09T17:12:49Z" duration-ms="7145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySupportTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-09T17:12:49Z" name="tearDown" finished-at="2018-08-09T17:12:51Z" duration-ms="2114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mailchimp.automation.testcases.HomePageTest -->
+    </test> <!-- Test Automation MailChimp -->
+  </suite> <!-- MailChimp_Demo_QA_Automation_Test_Report -->
+</testng-results>

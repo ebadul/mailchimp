@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.mailchimp.automation.testcases.HomePageTest">
+        <methods>
+          <include name="verifyBlogTitleTest"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyWhatsNewTitleTest"/>
+          <include name="verifyLearningTitleTest"/>
+          <include name="verifyPricingTitleTest"/>
+          <include name="verifyFeaturesTitleTest"/>
+          <include name="verifySignUpTitleTest"/>
+          <include name="verifySupportTitleTest"/>
+          <include name="verifyLoginTitleTest"/>
+        </methods>
+      </class> <!-- com.mailchimp.automation.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

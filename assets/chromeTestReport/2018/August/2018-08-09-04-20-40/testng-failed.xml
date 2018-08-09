@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MailChimp_Demo_QA_Automation_Test_Report]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.mailchimp.automation.reports.CustomReporter"/>
+  </listeners>
+  <test name="Test Automation MailChimp(failed)">
+    <classes>
+      <class name="com.mailchimp.automation.testcases.HomePageTest">
+        <methods>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyPricingTitleTest"/>
+        </methods>
+      </class> <!-- com.mailchimp.automation.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Test Automation MailChimp(failed) -->
+</suite> <!-- Failed suite [MailChimp_Demo_QA_Automation_Test_Report] -->

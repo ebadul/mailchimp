@@ -1,0 +1,38 @@
+-----------------------Thu Aug 09 16:15:24 BDT 2018----------------------
+
+Executed Suite Name : MailChimp_Demo_QA_Automation_Test_Report
+
+Executed Test Name : Test Automation MailChimp
+
+----------------------------------
+
+----------------------------------
+
+----------------------------------
+
+Executed TestCase Name : verifyHomePageTitleTest, Status : Skipped
+Message: null
+
+
+Tests suite 'MailChimp_Demo_QA_Automation_Test_Report' for null browser
+===============================================================
+
+Summary for Test: Test Automation MailChimp
+-----------------------------------------------
+Passed - 0
+Skipped - 1
+Failed - 0
+Total test case run - 1
+-----------------------------------------------
+***null***
+
+==================================
+Test Result Summary: null browser
+----------------------------------
+Total Passed: 0
+Total Skipped: 1
+Total Failed: 0
+Total Run: 1
+==================================
+
+----------------------------------
