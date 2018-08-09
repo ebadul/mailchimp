@@ -16,6 +16,10 @@ public class AboutPageTest {
 	HomePage homePage;
 	AboutPage aboutPage;
 	
+	public AboutPageTest(){
+		super();	
+	}
+	
 	@BeforeClass
 	public void setUp() {
 		homePage = new HomePage();
@@ -28,7 +32,7 @@ public class AboutPageTest {
 	@Test(priority=1)
 	public void saveLeadershipList(){
 		aboutPage.scrollToLeadershipSection();
-		aboutPage.saveLeadershipInfoToCSV();
+		//aboutPage.saveLeadershipInfoToCSV();
 		Assert.assertTrue(true);
 	}
 	

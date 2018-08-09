@@ -9,7 +9,6 @@
         <classes>
         	<class name="com.mailchimp.automation.testcases.HomePageTest"/>
         	<class name="com.mailchimp.automation.testcases.AboutPageTest"/>
-			<class name="com.mailchimp.automation.testcases.LoginPageTest"/>
         </classes>
     </test>
 </suite>

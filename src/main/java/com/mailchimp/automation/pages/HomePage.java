@@ -10,35 +10,47 @@ public class HomePage extends PageBase {
 
 	@FindBy(partialLinkText = "About MailChimp")
 	WebElement aboutLink;
-
+	
+	@FindBy(partialLinkText = "Sign Up Free")
+	WebElement signUpLink;
+	
 	@FindBy(partialLinkText = "Log In")
 	WebElement loginLink;
-
+	
+	
 	// Initializing the Page Objects:
 	public HomePage() {
 		super();
 		PageFactory.initElements(driver, this);
-	}
 
-	public String verifyHomePageTitle() {
+	}
+	
+	public String verifyHomePageTitle(){
 		return driver.getTitle();
 	}
-
-	public void scrollToAboutLink() {
+	
+	public void scrollToAboutLink(){
 		Actions actions = new Actions(driver);
-		actions.moveToElement(aboutLink);
-		// actions.build().perform();
-		actions.sendKeys(Keys.PAGE_DOWN).perform();
+        actions.moveToElement(aboutLink);
+        //actions.build().perform();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
 	}
-
-	public AboutPage clickOnAboutLink() {
+	
+	public AboutPage clickOnAboutLink(){
 		waitFor(3);
 		aboutLink.click();
+		
 		return new AboutPage();
 	}
-
-	public LoginPage clickOnLoginLink() {
-		waitFor(1);
+	
+	public SignUpPage clickOnSignUpLink(){
+		waitFor(3);
+		signUpLink.click();
+		
+		return new SignUpPage();
+	}
+	public LoginPage clickOnLoginLink(){
+		waitFor(3);
 		loginLink.click();
 		return new LoginPage();
 	}

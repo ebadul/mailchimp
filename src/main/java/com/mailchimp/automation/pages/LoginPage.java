@@ -1,108 +1,178 @@
 package com.mailchimp.automation.pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.mailchimp.automation.util.CustomeXpath;
+
 public class LoginPage extends PageBase {
-
+	
+	
+	CustomeXpath xpath;
+	HomePage homePage;
+	SignUpPage signupPage;
+	
 	public LoginPage() {
+		super();
 		PageFactory.initElements(driver, this);
+		xpath =new CustomeXpath();
 	}
 
-	private String user = "rootnext33";
-	private String pass = "4shared-D";
-
-	@FindBy(id = "username")
-	WebElement userName;
-
-	@FindBy(id = "password")
-	WebElement passWord;
-
-	@FindBy(tagName = "button")
-	WebElement loginButton;
-
-	@FindBy(xpath = "//*[@id=\"stay-signed-in\"]")
-	WebElement checkBox;
-
-//	@FindBy(xpath = "//*[@id=\"login-form\"]/fieldset/div[2]/div/label")
-//	WebElement showPassWord;
-
-	@FindBy(xpath = "//*[@id=\"login-form\"]/div/p/a")
-	WebElement createAccountLink;
-
-	@FindBy(xpath = "//*[@id=\"login-form\"]/fieldset/div[5]/p[1]/a")
-	WebElement forgotUsernameLink;
-
-	@FindBy(xpath = "//*[@id=\"login-form\"]/fieldset/div[5]/p[2]/a")
-	WebElement forgotPasswordLink;
-
-	@FindBy(xpath = "//*[@id=\"dijit__WidgetBase_1\"]")
-	WebElement cookiesPrefLink;
-
-	@FindBy(xpath = "//*[@id=\"login\"]/div[1]/div[1]/div[2]/div/p/span/a[1]")
-	WebElement privacyLink;
-
-	@FindBy(xpath = "//*[@id=\"login\"]/div[1]/div[1]/div[2]/div/p/span/a[2]")
-	WebElement TermsLink;
-
-	@FindBy(xpath = "//*[@id=\"billboard-cta-button\"]")
-	WebElement theDeal;
-
-
-	public void clickShowPass() {
-		// *[@id="show-password"]
-		// showPassWord.click();
-	}
-
-	public void clickCheckBox() {
-
-		if (!checkBox.isSelected()) {
-			checkBox.click();
-		}
-	}
-
-	public DashboardPage loginAction() {
-
-		userName.clear();
-		userName.sendKeys(user);
-		passWord.clear();
-		passWord.sendKeys(pass);
-		// showPassWord.click();
-
-		clickCheckBox();
-		waitFor(2);
-		loginButton.click();
-
-		return new DashboardPage();
-
-	}
-
-	public void checkOnLoginPageLink() {
-		createAccountLink.click();
-		driver.navigate().back();
-
-		forgotUsernameLink.click();
-		driver.navigate().back();
-
-		forgotPasswordLink.click();
-		driver.navigate().back();
-
-		cookiesPrefLink.click();
-		driver.navigate().back();
-
-		privacyLink.click();
-		driver.navigate().back();
-
-		TermsLink.click();
-		driver.navigate().back();
-
-	}
-
-	public String getLoginPageTitle() {
-
+	public String verifyPageTitle() {
+		// TODO Auto-generated method stub
 		return driver.getTitle();
 	}
-
 	
+	public void gotoLoginPage() {
+		driver.get("https://login.mailchimp.com/");
+	}
+
+	public DashBoardPage userLogin(String userName, String password) {
+
+		try {
+			WebElement userNameElement = xpath.selectItemByTagContain("input", "id", "username");
+			WebElement passWordElement = driver.findElement(By.id("password"));
+			WebElement submitButton = xpath.selectItemByTagContain("button", "value", "log in");
+			
+			userNameElement.sendKeys(userName);
+			passWordElement.sendKeys(password);
+			submitButton.click();
+			
+			return new DashBoardPage();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		}
+		
+	}
+	
+	public String checkLinkCreateAccount() {
+		try {
+			//WebElement element =  xpath.selectItemByTagContain("a", "title", "Signup for a MailChimp account");
+			WebElement element =  driver.findElement(By.linkText("Create an account"));
+			element.click();
+			return driver.getTitle();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	public String checkLinkForgetUserName() {
+		try {
+			WebElement element =  xpath.selectItemByText("a", "Forgot username?");
+			element.click();
+			return driver.getTitle();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	
+	public String checkLinkForgetPassword() {
+		try {
+			WebElement element =  xpath.selectItemByText("a", " Forgot password?");
+			element.click();
+			return driver.getTitle();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	public boolean checkLinkCookie() {
+		try {
+			WebElement element =  xpath.selectItemByText("a", "Cookie Preferences");
+			element.click();
+			WebElement elementPopUp =  xpath.selectItemByTagContain("div", "id", "optanon-popup-body");
+			return elementPopUp.isDisplayed();
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+	}
+	public boolean checkLinkPrivacy() {
+		try {
+			WebElement element =  xpath.selectItemByText("a", "Privacy");
+			element.click();
+			String url = driver.getCurrentUrl();
+			driver.get(url);
+			
+			// focusing to new tab
+			driver = this.changedriverFocus(driver);
+			
+			WebElement elementVerify =  xpath.selectItemByText("a", "Legal");
+			xpath.waitSomeSec(5, elementVerify);
+			return elementVerify.isDisplayed();
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+	}
+	public boolean checkLinkTerms() {
+		try {
+			WebElement element =  xpath.selectItemByText("a", "Terms");
+			element.click();
+			String url = driver.getCurrentUrl();
+			driver.get(url);
+			
+			// focusing to new tab
+			driver = this.changedriverFocus(driver);
+			
+			WebElement elementVerify =  xpath.selectItemByText("h2", "Terms of Use");		
+			xpath.waitSomeSec(5, elementVerify);
+			return elementVerify.isDisplayed();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
+	
+	
+	
+	public String checkLinkLearnAboutTool() {
+		try {
+			WebElement element =  xpath.selectItemByTagContain("a", "id", "billboard-cta-button");
+			element.click();
+			String url = driver.getCurrentUrl();
+			driver.get(url);
+			
+			// focusing to new tab	
+			driver = this.changedriverFocus(driver);	
+			
+			return driver.getTitle();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	public WebDriver changedriverFocus(WebDriver dvr) {
+		String currentWindow = driver.getWindowHandle();
+		for (String handle : dvr.getWindowHandles()) {
+		    if (!handle.equals(currentWindow)) {
+		        driver.switchTo().window(handle);
+		    }
+		}
+		return driver;
+	}
+	
+	
+	
+
 }

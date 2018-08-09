@@ -12,6 +12,10 @@ public class HomePageTest {
 	TestUtil testUtil;
 	HomePage homePage;
 	
+	public HomePageTest() {
+		super();
+	}
+	
 	//test cases should be separated -- independent with each other
 	//before each test case -- launch the browser and login
 	//@test -- execute test case
