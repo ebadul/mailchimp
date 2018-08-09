@@ -25,7 +25,8 @@ public class AboutPageTest {
 	}
 	
 	
-	@Test(priority=1)
+	//@Test(priority=1)
+	@Test
 	public void saveLeadershipList(){
 		aboutPage.scrollToLeadershipSection();
 		aboutPage.saveLeadershipInfoToCSV();

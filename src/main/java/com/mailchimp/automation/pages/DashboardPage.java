@@ -47,17 +47,16 @@ public class DashboardPage extends PageBase {
 		templatesButton.click();
 	}
 
-//	public CreateListPage clickOnCreateNewList() {
-//		listsButton.click();
-//		return new CreateListPage();
-//	}
-//
-//	public LogoutPage logOutAction() {
-//		clickUser();
-//		logOutButton.click();
-//		return new LogoutPage();
-//		// return new LoginPage();
-//	}
+	public CreateListPage clickOnCreateNewList() {
+		listsButton.click();
+		return new CreateListPage();
+	}
+
+	public LogoutPage logOutAction() {
+		clickUser();
+		logOutButton.click();
+		return new LogoutPage();
+	}
 
 	public void clickBack() {
 		driver.navigate().back();

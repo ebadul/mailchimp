@@ -24,7 +24,8 @@ public class HomePageTest {
 		homePage = new HomePage();
 	}
 		
-	@Test(priority=1)
+	//@Test(priority=1)
+	@Test
 	public void verifyHomePageTitleTest(){
 		String homePageTitle = homePage.verifyHomePageTitle();
 		System.out.println(homePageTitle);
