@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-08-09T18:51:59Z" name="MailChimp_Demo_QA_Automation_Test_Report" finished-at="2018-08-09T18:52:20Z" duration-ms="20371">
+    <groups>
+    </groups>
+    <test started-at="2018-08-09T18:51:59Z" name="Test Automation MailChimp" finished-at="2018-08-09T18:52:20Z" duration-ms="20371">
+      <class name="com.mailchimp.automation.testcases.SignUpPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.SignUpPageTest@2611b9a3]" started-at="2018-08-10T00:52:01Z" name="setUp" finished-at="2018-08-10T00:52:10Z" duration-ms="8509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySignUpWithInvalidEmail()[pri:1, instance:com.mailchimp.automation.testcases.SignUpPageTest@2611b9a3]" started-at="2018-08-10T00:52:10Z" name="verifySignUpWithInvalidEmail" finished-at="2018-08-10T00:52:13Z" duration-ms="3480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpWithInvalidEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.SignUpPageTest@2611b9a3]" started-at="2018-08-10T00:52:13Z" name="tearDown" finished-at="2018-08-10T00:52:13Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifySignUpWithExistingUser()[pri:2, instance:com.mailchimp.automation.testcases.SignUpPageTest@2611b9a3]" started-at="2018-08-10T00:52:13Z" name="verifySignUpWithExistingUser" finished-at="2018-08-10T00:52:17Z" duration-ms="3455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpWithExistingUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.SignUpPageTest@2611b9a3]" started-at="2018-08-10T00:52:17Z" name="tearDown" finished-at="2018-08-10T00:52:17Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifySignUpValidInfo()[pri:3, instance:com.mailchimp.automation.testcases.SignUpPageTest@2611b9a3]" started-at="2018-08-10T00:52:17Z" name="verifySignUpValidInfo" finished-at="2018-08-10T00:52:19Z" duration-ms="2144" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Check your email!] but found [Please check your entry and try again.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Check your email!] but found [Please check your entry and try again.]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.mailchimp.automation.testcases.SignUpPageTest.verifySignUpValidInfo(SignUpPageTest.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at com.mailchimp.automation.suite.TestStarter.start(TestStarter.java:37)
+	at com.mailchimp.automation.MailChimpApp.main(MailChimpApp.java:22)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpValidInfo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.SignUpPageTest@2611b9a3]" started-at="2018-08-10T00:52:20Z" name="tearDown" finished-at="2018-08-10T00:52:20Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mailchimp.automation.testcases.SignUpPageTest -->
+      <class name="com.mailchimp.automation.testcases.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@2f9a01c1]" started-at="2018-08-10T00:51:59Z" name="setUp" finished-at="2018-08-10T00:51:59Z" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomeHeaderElement()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@2f9a01c1]" started-at="2018-08-10T00:51:59Z" name="verifyHomeHeaderElement" finished-at="2018-08-10T00:52:00Z" duration-ms="675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomeHeaderElement -->
+        <test-method signature="verifyHomePageTitleTest()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@2f9a01c1]" started-at="2018-08-10T00:52:01Z" name="verifyHomePageTitleTest" finished-at="2018-08-10T00:52:01Z" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@2f9a01c1]" started-at="2018-08-10T00:52:01Z" name="setUp" finished-at="2018-08-10T00:52:01Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@2f9a01c1]" started-at="2018-08-10T00:52:01Z" name="tearDown" finished-at="2018-08-10T00:52:01Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@2f9a01c1]" started-at="2018-08-10T00:52:01Z" name="tearDown" finished-at="2018-08-10T00:52:01Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mailchimp.automation.testcases.HomePageTest -->
+    </test> <!-- Test Automation MailChimp -->
+  </suite> <!-- MailChimp_Demo_QA_Automation_Test_Report -->
+</testng-results>

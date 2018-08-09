@@ -1,4 +1,4 @@
------------------------Thu Aug 09 13:54:03 BDT 2018----------------------
+-----------------------Fri Aug 10 01:08:09 BDT 2018----------------------
 
 Executed Suite Name : MailChimp_Demo_QA_Automation_Test_Report
 
@@ -6,19 +6,19 @@ Executed Test Name : Test Automation MailChimp
 
 ----------------------------------
 
-Executed TestCase Name : verifyCreateNewList, Status : Passed
-Message: null
-
-Executed TestCase Name : verifyLoginSuccessfully, Status : Passed
-Message: null
-
-Executed TestCase Name : verifyDashBoardSuccessfully, Status : Passed
+Executed TestCase Name : verifySignUpValidInfo, Status : Passed
 Message: null
 
 Executed TestCase Name : verifyHomePageTitleTest, Status : Passed
 Message: null
 
-Executed TestCase Name : verifyLogOutSuccessfully, Status : Passed
+Executed TestCase Name : verifySignUpWithExistingUser, Status : Passed
+Message: null
+
+Executed TestCase Name : verifyHomeHeaderElement, Status : Passed
+Message: null
+
+Executed TestCase Name : verifySignUpWithInvalidEmail, Status : Passed
 Message: null
 
 ----------------------------------

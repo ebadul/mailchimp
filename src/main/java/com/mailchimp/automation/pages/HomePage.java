@@ -1,5 +1,7 @@
 package com.mailchimp.automation.pages;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -8,16 +10,45 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends PageBase {
 
-	@FindBy(partialLinkText = "About MailChimp")
-	WebElement aboutLink;
-
-	@FindBy(partialLinkText = "Log In")
-	WebElement loginLink;
-
-	// Initializing the Page Objects:
+	//Initializing the Page Objects:	
 	public HomePage() {
 		super();
 		PageFactory.initElements(driver, this);
+	}
+	
+	
+	@FindBy(xpath="//a[contains(text(),'Features')]")WebElement featureLink;
+	@FindBy(xpath="//a[contains(text(),'Pricing')]")WebElement pricingLink;
+	@FindBy(xpath="//a[contains(text(),'Support')]")WebElement supportLink;
+	@FindBy(xpath="//a[contains(text(),'Learning')]")WebElement learningLink;
+	@FindBy(xpath="//a[contains(text(),'Blog')]")WebElement blogLink;
+	@FindBy(xpath="//a[@class='item whatsNewNavUnvisited']")WebElement whatNewLink;
+	@FindBy(xpath="//a[@class='btn-small pop']")WebElement signUpLink;
+	@FindBy(xpath="//a[contains(text(),'Log In')]")WebElement logInLink;
+	@FindBy(xpath="//a[contains(text(),'About MailChimp')]")WebElement aboutLink;
+	
+	
+	public String getHomePageTitle() {
+		return driver.getTitle();
+	}
+
+	public ArrayList<String> getHomeHeaderElement() {
+		
+		ArrayList<String> arrayList =new ArrayList<String>();
+		arrayList.add(featureLink.getText());
+		arrayList.add(pricingLink.getText());
+		arrayList.add(supportLink.getText());
+		arrayList.add(learningLink.getText());
+		arrayList.add(blogLink.getText());
+		arrayList.add(whatNewLink.getText());
+		arrayList.add(signUpLink.getText());
+		arrayList.add(logInLink.getText());	
+		return arrayList;
+	}
+	
+	public SignUpPage clickOnSignUp() {
+		signUpLink.click();
+		return new SignUpPage();
 	}
 
 	public String verifyHomePageTitle() {
@@ -39,7 +70,7 @@ public class HomePage extends PageBase {
 
 	public LoginPage clickOnLoginLink() {
 		waitFor(1);
-		loginLink.click();
+		logInLink.click();
 		return new LoginPage();
 	}
 	

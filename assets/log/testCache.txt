@@ -97,3 +97,91 @@ Total Skipped: 0
 Total Failed: 0
 Total Run: 5
 ==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 5
+Total Skipped: 0
+Total Failed: 0
+Total Run: 5
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 2
+Total Skipped: 0
+Total Failed: 3
+Total Run: 5
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 2
+Total Skipped: 0
+Total Failed: 3
+Total Run: 5
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 4
+Total Skipped: 0
+Total Failed: 1
+Total Run: 5
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 4
+Total Skipped: 0
+Total Failed: 1
+Total Run: 5
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 4
+Total Skipped: 0
+Total Failed: 1
+Total Run: 5
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 0
+Total Skipped: 3
+Total Failed: 2
+Total Run: 5
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 5
+Total Skipped: 0
+Total Failed: 0
+Total Run: 5
+==================================

@@ -10,13 +10,17 @@
 	<test name="Test Automation MailChimp">
 		<classes>
 
-			<!-- <class name="com.mailchimp.automation.testcases.AboutPageTest"/> -->
-
+			<!-- 
+			<class name="com.mailchimp.automation.testcases.AboutPageTest"/> 
 			<class name="com.mailchimp.automation.testcases.HomePageTest" />
 			<class name="com.mailchimp.automation.testcases.LoginPageTest" />
 			<class name="com.mailchimp.automation.testcases.DashboardPageTest" />
 			<class name="com.mailchimp.automation.testcases.CreateListPageTest" />
 			<class name="com.mailchimp.automation.testcases.LogoutPageTest" />
+			-->
+			<class name="com.mailchimp.automation.testcases.HomePageTest" />
+			<class name="com.mailchimp.automation.testcases.SignUpPageTest" />
+			
 		</classes>
 	</test>
 </suite>
