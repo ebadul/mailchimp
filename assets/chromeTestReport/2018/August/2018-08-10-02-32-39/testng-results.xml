@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="35" passed="34" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-08-10T08:32:59Z" name="MailChimp_Demo_QA_Automation_Test_Report" finished-at="2018-08-10T08:45:57Z" duration-ms="778917">
+    <groups>
+    </groups>
+    <test started-at="2018-08-10T08:32:59Z" name="Test Automation MailChimp" finished-at="2018-08-10T08:39:48Z" duration-ms="409757">
+      <class name="com.mailchimp.automation.testcases.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:32:59Z" name="setUp" finished-at="2018-08-10T14:32:59Z" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageTitleTest()[pri:1, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:32:59Z" name="verifyHomePageTitleTest" finished-at="2018-08-10T14:32:59Z" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:32:59Z" name="tearDown" finished-at="2018-08-10T14:33:00Z" duration-ms="1296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyPricingTitleTest()[pri:2, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:33:00Z" name="verifyPricingTitleTest" finished-at="2018-08-10T14:33:07Z" duration-ms="6991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPricingTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:33:08Z" name="tearDown" finished-at="2018-08-10T14:33:11Z" duration-ms="2858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyFeaturesTitleTest()[pri:3, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:33:11Z" name="verifyFeaturesTitleTest" finished-at="2018-08-10T14:37:53Z" duration-ms="282877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFeaturesTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:37:54Z" name="tearDown" finished-at="2018-08-10T14:37:57Z" duration-ms="3113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyLearningTitleTest()[pri:4, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:37:57Z" name="verifyLearningTitleTest" finished-at="2018-08-10T14:38:31Z" duration-ms="34486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLearningTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:38:32Z" name="tearDown" finished-at="2018-08-10T14:38:34Z" duration-ms="2110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyBlogTitleTest()[pri:5, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:38:34Z" name="verifyBlogTitleTest" finished-at="2018-08-10T14:38:46Z" duration-ms="12513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBlogTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:38:47Z" name="tearDown" finished-at="2018-08-10T14:38:49Z" duration-ms="2198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyWhatsNewTitleTest()[pri:6, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:38:49Z" name="verifyWhatsNewTitleTest" finished-at="2018-08-10T14:39:07Z" duration-ms="17626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhatsNewTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:39:07Z" name="tearDown" finished-at="2018-08-10T14:39:09Z" duration-ms="2150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyLoginTitleTest()[pri:7, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:39:09Z" name="verifyLoginTitleTest" finished-at="2018-08-10T14:39:26Z" duration-ms="17308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:39:27Z" name="tearDown" finished-at="2018-08-10T14:39:29Z" duration-ms="2250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifySignUpTitleTest()[pri:8, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:39:29Z" name="verifySignUpTitleTest" finished-at="2018-08-10T14:39:35Z" duration-ms="6028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:39:36Z" name="tearDown" finished-at="2018-08-10T14:39:38Z" duration-ms="2232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifySupportTitleTest()[pri:9, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:39:38Z" name="verifySupportTitleTest" finished-at="2018-08-10T14:39:45Z" duration-ms="7314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySupportTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5778826f]" started-at="2018-08-10T14:39:46Z" name="tearDown" finished-at="2018-08-10T14:39:48Z" duration-ms="2625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mailchimp.automation.testcases.HomePageTest -->
+    </test> <!-- Test Automation MailChimp -->
+    <test started-at="2018-08-10T08:39:48Z" name="Test Automation MailChimp2" finished-at="2018-08-10T08:40:27Z" duration-ms="38642">
+      <class name="com.mailchimp.automation.testcases.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:39:48Z" name="setUp" finished-at="2018-08-10T14:39:55Z" duration-ms="6264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logInPageTitleTest()[pri:1, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:39:55Z" name="logInPageTitleTest" finished-at="2018-08-10T14:39:55Z" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInPageTitleTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:39:55Z" name="cleanUp" finished-at="2018-08-10T14:39:59Z" duration-ms="3792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="linkCreateAccountTest()[pri:2, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:39:59Z" name="linkCreateAccountTest" finished-at="2018-08-10T14:40:01Z" duration-ms="1854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkCreateAccountTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:40:01Z" name="cleanUp" finished-at="2018-08-10T14:40:03Z" duration-ms="1595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="linkForgetUserNameTest()[pri:3, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:40:03Z" name="linkForgetUserNameTest" finished-at="2018-08-10T14:40:05Z" duration-ms="2202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkForgetUserNameTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:40:05Z" name="cleanUp" finished-at="2018-08-10T14:40:07Z" duration-ms="1458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="linkForgetPasswordTest()[pri:4, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:40:07Z" name="linkForgetPasswordTest" finished-at="2018-08-10T14:40:08Z" duration-ms="1090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkForgetPasswordTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:40:08Z" name="cleanUp" finished-at="2018-08-10T14:40:10Z" duration-ms="1524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="linkPrivacy()[pri:5, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:40:10Z" name="linkPrivacy" finished-at="2018-08-10T14:40:14Z" duration-ms="4338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkPrivacy -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:40:14Z" name="cleanUp" finished-at="2018-08-10T14:40:16Z" duration-ms="1525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="linkTermTest()[pri:6, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:40:16Z" name="linkTermTest" finished-at="2018-08-10T14:40:19Z" duration-ms="2598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkTermTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:40:19Z" name="cleanUp" finished-at="2018-08-10T14:40:20Z" duration-ms="1597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="linkCookieTest()[pri:7, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:40:20Z" name="linkCookieTest" finished-at="2018-08-10T14:40:21Z" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkCookieTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:40:21Z" name="cleanUp" finished-at="2018-08-10T14:40:25Z" duration-ms="3408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="GoToHome()[pri:0, instance:com.mailchimp.automation.testcases.LoginPageTest@2756c0a7]" started-at="2018-08-10T14:40:25Z" name="GoToHome" finished-at="2018-08-10T14:40:27Z" duration-ms="2242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToHome -->
+      </class> <!-- com.mailchimp.automation.testcases.LoginPageTest -->
+    </test> <!-- Test Automation MailChimp2 -->
+    <test started-at="2018-08-10T08:40:27Z" name="Test Automation MailChimp3" finished-at="2018-08-10T08:41:23Z" duration-ms="55775">
+      <class name="com.mailchimp.automation.testcases.SignUpPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.SignUpPageTest@2b491fee]" started-at="2018-08-10T14:40:27Z" name="setUp" finished-at="2018-08-10T14:40:32Z" duration-ms="4892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signUpPageTitleTest()[pri:0, instance:com.mailchimp.automation.testcases.SignUpPageTest@2b491fee]" started-at="2018-08-10T14:40:32Z" name="signUpPageTitleTest" finished-at="2018-08-10T14:40:32Z" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpPageTitleTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.SignUpPageTest@2b491fee]" started-at="2018-08-10T14:40:32Z" name="cleanUp" finished-at="2018-08-10T14:40:33Z" duration-ms="973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="logInLinkTest()[pri:1, instance:com.mailchimp.automation.testcases.SignUpPageTest@2b491fee]" started-at="2018-08-10T14:40:33Z" name="logInLinkTest" finished-at="2018-08-10T14:40:37Z" duration-ms="3766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInLinkTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.SignUpPageTest@2b491fee]" started-at="2018-08-10T14:40:38Z" name="cleanUp" finished-at="2018-08-10T14:40:40Z" duration-ms="2019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="signUp_With_Invalid_Email_Test()[pri:3, instance:com.mailchimp.automation.testcases.SignUpPageTest@2b491fee]" started-at="2018-08-10T14:40:40Z" name="signUp_With_Invalid_Email_Test" finished-at="2018-08-10T14:40:43Z" duration-ms="3113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp_With_Invalid_Email_Test -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.SignUpPageTest@2b491fee]" started-at="2018-08-10T14:40:43Z" name="cleanUp" finished-at="2018-08-10T14:40:45Z" duration-ms="2330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="signUp_With_Invalid_Email_And_Existing_UserName_Test()[pri:4, instance:com.mailchimp.automation.testcases.SignUpPageTest@2b491fee]" started-at="2018-08-10T14:40:45Z" name="signUp_With_Invalid_Email_And_Existing_UserName_Test" finished-at="2018-08-10T14:40:48Z" duration-ms="3080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp_With_Invalid_Email_And_Existing_UserName_Test -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.SignUpPageTest@2b491fee]" started-at="2018-08-10T14:40:49Z" name="cleanUp" finished-at="2018-08-10T14:40:50Z" duration-ms="968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="signUp_With_Valid_Email_And_UserName_Test()[pri:5, instance:com.mailchimp.automation.testcases.SignUpPageTest@2b491fee]" started-at="2018-08-10T14:40:50Z" name="signUp_With_Valid_Email_And_UserName_Test" finished-at="2018-08-10T14:41:17Z" duration-ms="26818" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[@class='!margin-bottom--lv3 no-transform center-on-medium']"}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-0E4BT9V', ip: '192.168.18.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\RONISA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: bee38482b1114f00388c241449bdd54b
+*** Element info: {Using=xpath, value=//h1[@class='!margin-bottom--lv3 no-transform center-on-medium']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[@class='!margin-bottom--lv3 no-transform center-on-medium']"}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-0E4BT9V', ip: '192.168.18.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\RONISA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: bee38482b1114f00388c241449bdd54b
+*** Element info: {Using=xpath, value=//h1[@class='!margin-bottom--lv3 no-transform center-on-medium']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.getText(Unknown Source)
+	at com.mailchimp.automation.testcases.SignUpPageTest.signUp_With_Valid_Email_And_UserName_Test(SignUpPageTest.java:95)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at com.mailchimp.automation.suite.TestStarter.start(TestStarter.java:37)
+	at com.mailchimp.automation.MailChimpApp.main(MailChimpApp.java:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp_With_Valid_Email_And_UserName_Test -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.SignUpPageTest@2b491fee]" started-at="2018-08-10T14:41:17Z" name="cleanUp" finished-at="2018-08-10T14:41:19Z" duration-ms="1974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="GoToHome()[pri:0, instance:com.mailchimp.automation.testcases.SignUpPageTest@2b491fee]" started-at="2018-08-10T14:41:19Z" name="GoToHome" finished-at="2018-08-10T14:41:23Z" duration-ms="3962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToHome -->
+      </class> <!-- com.mailchimp.automation.testcases.SignUpPageTest -->
+    </test> <!-- Test Automation MailChimp3 -->
+    <test started-at="2018-08-10T08:41:23Z" name="Test Automation MailChimp4" finished-at="2018-08-10T08:43:21Z" duration-ms="117704">
+      <class name="com.mailchimp.automation.testcases.DashBoardPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:41:23Z" name="setUp" finished-at="2018-08-10T14:41:51Z" duration-ms="28191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkTitle()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:41:51Z" name="checkTitle" finished-at="2018-08-10T14:41:51Z" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitle -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:41:51Z" name="cleanUp" finished-at="2018-08-10T14:41:54Z" duration-ms="3001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="clickToReport()[pri:1, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:41:54Z" name="clickToReport" finished-at="2018-08-10T14:41:56Z" duration-ms="1804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickToReport -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:41:56Z" name="cleanUp" finished-at="2018-08-10T14:41:59Z" duration-ms="3001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="clickToListlink()[pri:2, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:41:59Z" name="clickToListlink" finished-at="2018-08-10T14:42:01Z" duration-ms="1779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickToListlink -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:42:02Z" name="cleanUp" finished-at="2018-08-10T14:42:05Z" duration-ms="3001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="clickToCampaignLink()[pri:3, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:42:05Z" name="clickToCampaignLink" finished-at="2018-08-10T14:42:06Z" duration-ms="1558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickToCampaignLink -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:42:07Z" name="cleanUp" finished-at="2018-08-10T14:42:10Z" duration-ms="3001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="clickToTemplateLink()[pri:4, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:42:10Z" name="clickToTemplateLink" finished-at="2018-08-10T14:42:11Z" duration-ms="1414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickToTemplateLink -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:42:12Z" name="cleanUp" finished-at="2018-08-10T14:42:15Z" duration-ms="3000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="clickToHelpLink()[pri:5, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:42:15Z" name="clickToHelpLink" finished-at="2018-08-10T14:42:19Z" duration-ms="4557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickToHelpLink -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:42:19Z" name="cleanUp" finished-at="2018-08-10T14:42:22Z" duration-ms="3001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="clickToProfile()[pri:6, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:42:22Z" name="clickToProfile" finished-at="2018-08-10T14:42:25Z" duration-ms="2506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickToProfile -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:42:25Z" name="cleanUp" finished-at="2018-08-10T14:42:28Z" duration-ms="3001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="clickToAccount()[pri:7, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:42:28Z" name="clickToAccount" finished-at="2018-08-10T14:42:30Z" duration-ms="1884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickToAccount -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:42:30Z" name="cleanUp" finished-at="2018-08-10T14:42:33Z" duration-ms="3000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="clickToConnectedSite()[pri:8, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:42:33Z" name="clickToConnectedSite" finished-at="2018-08-10T14:42:57Z" duration-ms="23271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickToConnectedSite -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:42:57Z" name="cleanUp" finished-at="2018-08-10T14:43:00Z" duration-ms="3001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="clickToNotification()[pri:9, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:43:00Z" name="clickToNotification" finished-at="2018-08-10T14:43:01Z" duration-ms="1140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickToNotification -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:43:01Z" name="cleanUp" finished-at="2018-08-10T14:43:04Z" duration-ms="3002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="clickToLogout()[pri:10, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:43:04Z" name="clickToLogout" finished-at="2018-08-10T14:43:14Z" duration-ms="10022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickToLogout -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:43:15Z" name="cleanUp" finished-at="2018-08-10T14:43:18Z" duration-ms="3000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="GoToHome()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@e260766]" started-at="2018-08-10T14:43:18Z" name="GoToHome" finished-at="2018-08-10T14:43:21Z" duration-ms="2784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToHome -->
+      </class> <!-- com.mailchimp.automation.testcases.DashBoardPageTest -->
+    </test> <!-- Test Automation MailChimp4 -->
+    <test started-at="2018-08-10T08:43:21Z" name="Test Automation MailChimp5" finished-at="2018-08-10T08:45:03Z" duration-ms="102494">
+      <class name="com.mailchimp.automation.testcases.CampaignPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.CampaignPageTest@6731787b]" started-at="2018-08-10T14:43:21Z" name="setUp" finished-at="2018-08-10T14:43:34Z" duration-ms="13864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createCampaign()[pri:1, instance:com.mailchimp.automation.testcases.CampaignPageTest@6731787b]" started-at="2018-08-10T14:43:34Z" name="createCampaign" finished-at="2018-08-10T14:45:00Z" duration-ms="86004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCampaign -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.CampaignPageTest@6731787b]" started-at="2018-08-10T14:45:01Z" name="cleanUp" finished-at="2018-08-10T14:45:01Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="GoToHome()[pri:0, instance:com.mailchimp.automation.testcases.CampaignPageTest@6731787b]" started-at="2018-08-10T14:45:01Z" name="GoToHome" finished-at="2018-08-10T14:45:03Z" duration-ms="2220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToHome -->
+      </class> <!-- com.mailchimp.automation.testcases.CampaignPageTest -->
+    </test> <!-- Test Automation MailChimp5 -->
+    <test started-at="2018-08-10T08:45:03Z" name="Test Automation MailChimp6" finished-at="2018-08-10T08:45:26Z" duration-ms="23060">
+      <class name="com.mailchimp.automation.testcases.ListPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.ListPageTest@6f0ca692]" started-at="2018-08-10T14:45:03Z" name="setUp" finished-at="2018-08-10T14:45:15Z" duration-ms="12022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createList()[pri:1, instance:com.mailchimp.automation.testcases.ListPageTest@6f0ca692]" started-at="2018-08-10T14:45:15Z" name="createList" finished-at="2018-08-10T14:45:25Z" duration-ms="9509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createList -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.ListPageTest@6f0ca692]" started-at="2018-08-10T14:45:25Z" name="cleanUp" finished-at="2018-08-10T14:45:25Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="GoToHome()[pri:0, instance:com.mailchimp.automation.testcases.ListPageTest@6f0ca692]" started-at="2018-08-10T14:45:25Z" name="GoToHome" finished-at="2018-08-10T14:45:26Z" duration-ms="1212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToHome -->
+      </class> <!-- com.mailchimp.automation.testcases.ListPageTest -->
+    </test> <!-- Test Automation MailChimp6 -->
+    <test started-at="2018-08-10T08:45:26Z" name="Test Automation MailChimp7" finished-at="2018-08-10T08:45:57Z" duration-ms="31364">
+      <class name="com.mailchimp.automation.testcases.TemplatePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.TemplatePageTest@1d7f7be7]" started-at="2018-08-10T14:45:26Z" name="setUp" finished-at="2018-08-10T14:45:40Z" duration-ms="14036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createList()[pri:1, instance:com.mailchimp.automation.testcases.TemplatePageTest@1d7f7be7]" started-at="2018-08-10T14:45:40Z" name="createList" finished-at="2018-08-10T14:45:54Z" duration-ms="14005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createList -->
+        <test-method is-config="true" signature="GoToHome()[pri:0, instance:com.mailchimp.automation.testcases.TemplatePageTest@1d7f7be7]" started-at="2018-08-10T14:45:55Z" name="GoToHome" finished-at="2018-08-10T14:45:57Z" duration-ms="2953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToHome -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.mailchimp.automation.testcases.TemplatePageTest@1d7f7be7]" started-at="2018-08-10T14:45:55Z" name="cleanUp" finished-at="2018-08-10T14:45:55Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.mailchimp.automation.testcases.TemplatePageTest -->
+    </test> <!-- Test Automation MailChimp7 -->
+  </suite> <!-- MailChimp_Demo_QA_Automation_Test_Report -->
+</testng-results>

@@ -29,6 +29,7 @@
         <methods>
           <include name="linkPrivacy"/>
           <include name="setUp"/>
+          <include name="GoToHome"/>
           <include name="linkTermTest"/>
           <include name="linkForgetPasswordTest"/>
           <include name="logInPageTitleTest"/>
@@ -48,8 +49,8 @@
           <include name="cleanUp"/>
           <include name="signUp_With_Valid_Email_And_UserName_Test"/>
           <include name="signUp_With_Invalid_Email_Test"/>
-          <include name="signUpTest"/>
           <include name="logInLinkTest"/>
+          <include name="GoToHome"/>
           <include name="signUpPageTitleTest"/>
           <include name="signUp_With_Invalid_Email_And_Existing_UserName_Test"/>
         </methods>
@@ -71,6 +72,7 @@
           <include name="clickToNotification"/>
           <include name="clickToTemplateLink"/>
           <include name="setUp"/>
+          <include name="GoToHome"/>
           <include name="clickToLogout"/>
           <include name="cleanUp"/>
         </methods>
@@ -84,6 +86,7 @@
           <include name="setUp"/>
           <include name="cleanUp"/>
           <include name="createCampaign"/>
+          <include name="GoToHome"/>
         </methods>
       </class> <!-- com.mailchimp.automation.testcases.CampaignPageTest -->
     </classes>
@@ -95,6 +98,7 @@
           <include name="createList"/>
           <include name="cleanUp"/>
           <include name="setUp"/>
+          <include name="GoToHome"/>
         </methods>
       </class> <!-- com.mailchimp.automation.testcases.ListPageTest -->
     </classes>
@@ -106,6 +110,7 @@
           <include name="createList"/>
           <include name="cleanUp"/>
           <include name="setUp"/>
+          <include name="GoToHome"/>
         </methods>
       </class> <!-- com.mailchimp.automation.testcases.TemplatePageTest -->
     </classes>
