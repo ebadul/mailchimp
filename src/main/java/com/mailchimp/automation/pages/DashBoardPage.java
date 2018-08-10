@@ -64,6 +64,7 @@ public class DashBoardPage  extends PageBase{
 	public String goToReport() {
 		linkReport.click();
 		return driver.getTitle();	
+		
 	}
 	
 	public CampaignPage goToCampaignPage() {
@@ -98,6 +99,7 @@ public class DashBoardPage  extends PageBase{
 		xpath.waitSomeSec(5, goToNotificationback);
 		goToNotificationback.click();
 		userTabLink.click();
+		
 	}
 	
 	public void goToProfile() {

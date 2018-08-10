@@ -1,5 +1,5 @@
 package com.mailchimp.automation.testcases;
-import org.testng.annotations.BeforeSuite;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -39,13 +39,6 @@ public class SignUpPageTest {
 			Assert.assertEquals(actualTitle, expectedTitle, "Title did not matched");
 			
 		}
-		/*@Test(priority = 2)
-		public void signUpTest() {
-			String expectedTitle="MailChimp | Success";
-			String actualTitle = page.signUp("maichimp.roni475636@gmail.com", "user42234241", "11M@rch1994");
-			Assert.assertEquals(actualTitle, expectedTitle, "Title did not matched");
-			
-		}*/
 		
 		@Test(priority = 3)
 		public void signUp_With_Invalid_Email_Test() {
@@ -88,8 +81,6 @@ public class SignUpPageTest {
 		public void signUp_With_Valid_Email_And_UserName_Test() {
 			page.driver.navigate().refresh();
 			String msg = page.signUp("maichimp.roni15ygg201@gmail.com", "ronisa980ha33185676", "11M@rch1994");
-			
-			
 			boolean msg1Test = msg.equalsIgnoreCase("Your password is secure and you're all set!");
 			page.getStarted.click();
 			boolean msg2 = page.successMsg.getText().equalsIgnoreCase("Check your email!");

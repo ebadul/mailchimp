@@ -1,0 +1,66 @@
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 0
+Total Skipped: 34
+Total Failed: 1
+Total Run: 35
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 1
+Total Skipped: 0
+Total Failed: 0
+Total Run: 1
+==================================
+
+***null***
+
+==================================
+Test Result Summary: null browser
+----------------------------------
+Total Passed: 0
+Total Skipped: 35
+Total Failed: 0
+Total Run: 35
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 34
+Total Skipped: 0
+Total Failed: 1
+Total Run: 35
+==================================
+
+***null***
+
+==================================
+Test Result Summary: null browser
+----------------------------------
+Total Passed: 0
+Total Skipped: 1
+Total Failed: 0
+Total Run: 1
+==================================
+
+***https://mailchimp.com/***
+
+==================================
+Test Result Summary: chrome browser
+----------------------------------
+Total Passed: 1
+Total Skipped: 0
+Total Failed: 0
+Total Run: 1
+==================================

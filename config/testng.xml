@@ -5,6 +5,15 @@
         <listener class-name="com.mailchimp.automation.reports.CustomReporter" />
     </listeners>
     
+    
+   
+      <test name="Test Automation MailChimp6">
+        <classes>        
+        	<class name="com.mailchimp.automation.testcases.CampaignPageTest"/>   	
+        </classes>
+    </test> 
+    
+   <!--  
     <test name="Test Automation MailChimp">
         <classes>
         	<class name="com.mailchimp.automation.testcases.HomePageTest"/>       	  	
@@ -28,22 +37,20 @@
         </classes>
     </test>  
     
-     <test name="Test Automation MailChimp5">
-        <classes>        
-        	<class name="com.mailchimp.automation.testcases.CampaignPageTest"/>   	
-        </classes>
-    </test> 
+     
    
-     <test name="Test Automation MailChimp6">
+     <test name="Test Automation MailChimp5">
         <classes>        
         	<class name="com.mailchimp.automation.testcases.ListPageTest"/>   	
         </classes>
     </test> 
     
+   
+    
      <test name="Test Automation MailChimp7">
         <classes>        
         	<class name="com.mailchimp.automation.testcases.TemplatePageTest"/>   	
         </classes> 
-    </test> 
+    </test>  -->
     
 </suite>

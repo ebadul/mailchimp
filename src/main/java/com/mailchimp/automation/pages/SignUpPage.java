@@ -78,15 +78,13 @@ public class SignUpPage extends PageBase{
 		
 		
 		public void goSignUpPage() {
-			driver.get("https://login.mailchimp.com/signup/");
-			
+			driver.get("https://login.mailchimp.com/signup/");	
 		}
 	
 	
 		public String loginLinkTest() {
 			linkToLogIn.click();
-			return driver.getTitle();
-			
+			return driver.getTitle();	
 		}
 		
 		public String getErrorTopMsg() {

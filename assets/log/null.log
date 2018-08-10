@@ -1,0 +1,38 @@
+-----------------------Fri Aug 10 18:45:34 BDT 2018----------------------
+
+Executed Suite Name : MailChimp_Demo_QA_Automation_Test_Report
+
+Executed Test Name : Test Automation MailChimp6
+
+----------------------------------
+
+----------------------------------
+
+----------------------------------
+
+Executed TestCase Name : createCampaign, Status : Skipped
+Message: null
+
+
+Tests suite 'MailChimp_Demo_QA_Automation_Test_Report' for null browser
+===============================================================
+
+Summary for Test: Test Automation MailChimp6
+-----------------------------------------------
+Passed - 0
+Skipped - 1
+Failed - 0
+Total test case run - 1
+-----------------------------------------------
+***null***
+
+==================================
+Test Result Summary: null browser
+----------------------------------
+Total Passed: 0
+Total Skipped: 1
+Total Failed: 0
+Total Run: 1
+==================================
+
+----------------------------------

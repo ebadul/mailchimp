@@ -27,7 +27,7 @@ public class CampaignPage extends PageBase{
 	@FindBy(xpath = "//table[@id='dijit_form_Select_1']")
 	WebElement chooseList;
 	
-	@FindBy(xpath = "//td[@id='dijit_MenuItem_2_text']")
+	@FindBy(xpath = "//td[contains(text(),'funny')]")
 	WebElement listName;
 	
 	@FindBy(xpath = "//button[contains(text(),'Save')]")
