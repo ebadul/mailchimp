@@ -98,6 +98,10 @@ public class LoginPageTest {
 		page.gotoLoginPage();
 	}
 	
-	
+	@AfterTest
+	public void GoToHome(){
+		
+		homePage.driver.get("https://mailchimp.com/");
+	}
 
 }

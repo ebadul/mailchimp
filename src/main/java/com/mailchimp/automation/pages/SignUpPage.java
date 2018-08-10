@@ -63,9 +63,11 @@ public class SignUpPage extends PageBase{
 				userNameElement.sendKeys(userName);
 				passWordElement.clear();
 				passWordElement.sendKeys(password);
+				xpath.waitSomeSec(5, readyToGoMsg);		
+				String msg = getrReadyToGoMsg();
 				xpath.waitSomeSec(3, submitButton);		
 				submitButton.click();
-				return driver.getTitle();
+				return msg;
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

@@ -1,7 +1,9 @@
 package com.mailchimp.automation.testcases;
 
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.mailchimp.automation.pages.DashBoardPage;
@@ -19,7 +21,7 @@ public class TemplatePageTest {
 		super();
 	}
 	
-	@BeforeSuite
+	@BeforeTest
 	public void setUp() {
 		hpage = new HomePage();
 		lpage = hpage.clickOnLoginLink();
@@ -38,5 +40,11 @@ public class TemplatePageTest {
 	@AfterMethod
 	public void cleanUp() {
 		
+	}
+	
+	@AfterTest
+	public void GoToHome(){
+		
+		hpage.driver.get("https://mailchimp.com/");
 	}
 }

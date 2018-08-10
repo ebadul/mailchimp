@@ -15,7 +15,7 @@ public class CampaignPage extends PageBase{
 	@FindBy(xpath = "//p[@class='fwb margin--lv0'][contains(text(),'Email')]")
 	WebElement emailCampaign;
 	
-	@FindBy(xpath = "//fieldset[@id='dijit__TemplatedMixin_8']//input[@name='name']")
+	@FindBy(xpath = "//fieldset[@id='dijit__TemplatedMixin_8']//input[contains(@name,'name')]")
 	WebElement newCampaignName;
 	
 	@FindBy(xpath = "//div[@id='dijit__WidgetsInTemplateMixin_31']//button[@type='submit'][contains(text(),'Begin')]")
@@ -27,10 +27,10 @@ public class CampaignPage extends PageBase{
 	@FindBy(xpath = "//table[@id='dijit_form_Select_1']")
 	WebElement chooseList;
 	
-	@FindBy(xpath = "//td[@id='dijit_MenuItem_23_text']")
+	@FindBy(xpath = "//td[@id='dijit_MenuItem_2_text']")
 	WebElement listName;
 	
-	@FindBy(xpath = "//div[@id='uniqName_6_44']//button[contains(@class,'button p0')][contains(text(),'Save')]")
+	@FindBy(xpath = "//button[contains(text(),'Save')]")
 	WebElement saveList;
 	
 	@FindBy(xpath = "//button[contains(text(),'Add From')]")
@@ -85,10 +85,13 @@ public class CampaignPage extends PageBase{
 	}
 	
 	
-public void createNewCampaign(String campaignName) {	
+public void createNewCampaign(String campaignName) {
+		xpath.waitSomeSec(5,createCampaign );
 		createCampaign.click();
 		
+		xpath.waitSomeSec(5,emailCampaign );
 		emailCampaign.click();
+		
 		
 		xpath.waitSomeSec(5,newCampaignName );
 		newCampaignName.clear();
@@ -100,10 +103,10 @@ public void createNewCampaign(String campaignName) {
 		addRecipients.click();
 		
 		chooseList.click();
-		
+		actions.moveToElement(listName);
 		xpath.waitSomeSec(5,listName );
 		listName.click();
-		xpath.waitFor(5);
+	
 		
 		actions.moveToElement(saveList);
 		actions.perform();

@@ -2,7 +2,9 @@ package com.mailchimp.automation.testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.mailchimp.automation.pages.DashBoardPage;
@@ -18,7 +20,7 @@ public class DashBoardPageTest {
 		super();
 	}
 	
-	@BeforeSuite
+	@BeforeTest
 	public void setUp() {
 		hpage = new HomePage();
 		loginPage = hpage.clickOnLoginLink();
@@ -90,6 +92,12 @@ public class DashBoardPageTest {
 		page.xpath.waitFor(3);
 	
 		
+	}
+	
+	@AfterTest
+	public void GoToHome(){
+		
+		hpage.driver.get("https://mailchimp.com/");
 	}
 
 }
