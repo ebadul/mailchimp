@@ -17,7 +17,7 @@ public class CustomeXpath extends PageBase{
 	{
 		try {
 			WebElement element = driver.findElement(By.xpath("//"+tagName+"[contains(@"+attributeName
-												+",'"+attributeValue+"') and text()='"+textValue+"']"));
+												+",'"+attributeValue+"')and text()='"+textValue+"']"));
 			
 			return element;
 		} catch (Exception e) {
