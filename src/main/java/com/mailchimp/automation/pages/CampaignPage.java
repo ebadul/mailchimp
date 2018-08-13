@@ -106,8 +106,7 @@ public void createNewCampaign(String campaignName) {
 		actions.moveToElement(listName);
 		xpath.waitSomeSec(5,listName );
 		listName.click();
-	
-		
+
 		actions.moveToElement(saveList);
 		actions.perform();
 		saveList.click();

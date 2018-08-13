@@ -19,7 +19,13 @@ public class LoginPage extends PageBase {
 	WebElement passWordElement;
 	
 	@FindBy(xpath = "//button[@value='log in']")
-	WebElement submitButton;
+	public WebElement submitButton;
+	
+	@FindBy(xpath = "//span[@class='padding-right--lv1']")
+	public WebElement needAccountText;
+	
+	@FindBy(xpath = "//label[@class='block !padding--lv0']")
+	public WebElement keepMeLogedIn;
 	
 	@FindBy(xpath = "//a[@title='Signup for a MailChimp account']")
 	WebElement linkToCreateAccount;
@@ -47,15 +53,38 @@ public class LoginPage extends PageBase {
 	
 	@FindBy(xpath = "//h2[contains(text(),'Terms of Use')]")
 	WebElement linkToCheckTermPage;
+	
+	@FindBy(xpath = "//p[contains(text(),'You did not enter a username or a password.')]")
+	public WebElement errorMsgForBlankInfo;
+	
+	@FindBy(xpath = "//p[contains(text(),'Looks like you forgot your password there, ronisah')]")
+	public WebElement errorMsgForBlankPassword;
 
+	@FindBy(xpath = "//p[contains(text(),'You entered a password but not a username.')]")
+	public WebElement errorMsgForBlankUserName;
+	
+	
+	@FindBy(xpath = "//div[@class='c-mediaBody--centered']//p")
+	public WebElement errorMsgForWrongInfo;
+	
+	@FindBy(xpath = "//h4[contains(text(),\"You've been logged out.\")]")
+	public WebElement errorMsgForLogout1;
+	
+	@FindBy(xpath = "//p[contains(text(),\"Don't worry, you can log back in below\")]")
+	public WebElement errorMsgForLogout2;
+	
+	@FindBy(xpath = "//div[@class='c-mediaBody--centered']//p")
+	public WebElement errorMsgForValidUserWrongPassword;
+	
+	
 	public LoginPage() {
 		super();
 		PageFactory.initElements(driver, this);
 		xpath = new CustomeXpath();
 	}
 
+	
 	public String verifyPageTitle() {
-		// TODO Auto-generated method stub
 		return driver.getTitle();
 	}
 	

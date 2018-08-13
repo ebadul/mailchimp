@@ -80,7 +80,7 @@ public class SignUpPageTest {
 		@Test(priority = 5)
 		public void signUp_With_Valid_Email_And_UserName_Test() {
 			page.driver.navigate().refresh();
-			String msg = page.signUp("maichimp.roni15ygg201@gmail.com", "ronisa980ha33185676", "11M@rch1994");
+			String msg = page.signUp("maichimp.ronisaha01@gmail.com", "ronisaha185676", "11M@rch1994");
 			boolean msg1Test = msg.equalsIgnoreCase("Your password is secure and you're all set!");
 			page.getStarted.click();
 			boolean msg2 = page.successMsg.getText().equalsIgnoreCase("Check your email!");

@@ -3,18 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.mailchimp.automation.testcases.SignUpPageTest">
+      <class name="com.mailchimp.automation.testcases.LoginPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="cleanUp"/>
-          <include name="signUp_With_Valid_Email_And_UserName_Test"/>
-          <include name="signUp_With_Invalid_Email_Test"/>
-          <include name="logInLinkTest"/>
+          <include name="needAccountElementTextTest"/>
           <include name="GoToHome"/>
-          <include name="signUpPageTitleTest"/>
-          <include name="signUp_With_Invalid_Email_And_Existing_UserName_Test"/>
+          <include name="loginElementTextTest"/>
+          <include name="logInPageTitleTest"/>
+          <include name="keepMeLogInElementTextTest"/>
+          <include name="linkCreateAccountTest"/>
+          <include name="cleanUp"/>
         </methods>
-      </class> <!-- com.mailchimp.automation.testcases.SignUpPageTest -->
+      </class> <!-- com.mailchimp.automation.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

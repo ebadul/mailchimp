@@ -1,20 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="46" passed="0" failed="0" skipped="46">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2018-08-13T10:11:20Z" name="Suite" finished-at="2018-08-13T10:11:20Z" duration-ms="362">
-    <groups>
-    </groups>
-    <test started-at="2018-08-13T10:11:20Z" name="Test" finished-at="2018-08-13T10:11:20Z" duration-ms="362">
-      <class name="com.mailchimp.automation.testcases.ListPageTest">
-        <test-method signature="createList()[pri:1, instance:com.mailchimp.automation.testcases.ListPageTest@57250572]" started-at="2018-08-13T16:11:20Z" name="createList" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/46</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 13 16:11:20 BDT 2018</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (362 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.setUp()'><b>setUp</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1523457748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1523457748'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -39,30 +112,149 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createList -->
-      </class> <!-- com.mailchimp.automation.testcases.ListPageTest -->
-      <class name="com.mailchimp.automation.testcases.AboutPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.AboutPageTest@68567e20]" started-at="2018-08-13T16:11:20Z" name="setUp" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mailchimp.automation.testcases.AboutPageTest@68567e20]" started-at="2018-08-13T16:11:20Z" name="tearDown" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="saveLeadershipList()[pri:1, instance:com.mailchimp.automation.testcases.AboutPageTest@68567e20]" started-at="2018-08-13T16:11:20Z" name="saveLeadershipList" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.CampaignPageTest@3098cf3b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.setUp()'><b>setUp</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.setUp()'><b>setUp</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.HomePageTest@5609159b</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.setUp()'><b>setUp</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.ListPageTest@57250572</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.setUp()'><b>setUp</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.LoginPageTest@2118cddf</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.setUp()'><b>setUp</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.SignUpPageTest@610f7aa</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.setUp()'><b>setUp</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.TemplatePageTest@17a7f733</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.testBeforeTest()'><b>testBeforeTest</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.TestPageBase@6a03bcb1</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AboutPageTest.setUp()'><b>setUp</b><br>Test class: com.mailchimp.automation.testcases.AboutPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.AboutPageTest@68567e20</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.setUp()'><b>setUp</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.AnnotationTest@175b9425</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.setUp()'><b>setUp</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.AnnotationTest@175b9425</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.setUp()'><b>setUp</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.AnnotationTest@175b9425</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.setUp()'><b>setUp</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.AnnotationTest@175b9425</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.setUp()'><b>setUp</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.AnnotationTest@175b9425</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AboutPageTest.tearDown()'><b>tearDown</b><br>Test class: com.mailchimp.automation.testcases.AboutPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.AboutPageTest@68567e20</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.fass()'><b>fass</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.AnnotationTest@175b9425</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.GoToHome()'><b>GoToHome</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.CampaignPageTest@3098cf3b</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.GoToHome()'><b>GoToHome</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.GoToHome()'><b>GoToHome</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.ListPageTest@57250572</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.GoToHome()'><b>GoToHome</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.LoginPageTest@2118cddf</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.GoToHome()'><b>GoToHome</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.SignUpPageTest@610f7aa</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.GoToHome()'><b>GoToHome</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.TemplatePageTest@17a7f733</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.testAfterTest()'><b>testAfterTest</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.TestPageBase@6a03bcb1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.DashBoardPageTest.checkTitle()'><b>checkTitle</b><br>Test class: com.mailchimp.automation.testcases.DashBoardPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1652807864", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1652807864'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -87,22 +279,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveLeadershipList -->
-      </class> <!-- com.mailchimp.automation.testcases.AboutPageTest -->
-      <class name="com.mailchimp.automation.testcases.TemplatePageTest">
-        <test-method signature="createList()[pri:1, instance:com.mailchimp.automation.testcases.TemplatePageTest@17a7f733]" started-at="2018-08-13T16:11:20Z" name="createList" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.DashBoardPageTest.clickToAccount()'><b>clickToAccount</b><br>Test class: com.mailchimp.automation.testcases.DashBoardPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1515638188", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1515638188'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -127,22 +320,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createList -->
-      </class> <!-- com.mailchimp.automation.testcases.TemplatePageTest -->
-      <class name="com.mailchimp.automation.testcases.SignUpPageTest">
-        <test-method signature="signUpPageTitleTest()[pri:0, instance:com.mailchimp.automation.testcases.SignUpPageTest@610f7aa]" started-at="2018-08-13T16:11:20Z" name="signUpPageTitleTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.DashBoardPageTest.clickToCampaignLink()'><b>clickToCampaignLink</b><br>Test class: com.mailchimp.automation.testcases.DashBoardPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace547201549", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace547201549'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -167,20 +361,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUpPageTitleTest -->
-        <test-method signature="logInLinkTest()[pri:1, instance:com.mailchimp.automation.testcases.SignUpPageTest@610f7aa]" started-at="2018-08-13T16:11:20Z" name="logInLinkTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.DashBoardPageTest.clickToConnectedSite()'><b>clickToConnectedSite</b><br>Test class: com.mailchimp.automation.testcases.DashBoardPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1526970878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1526970878'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -205,20 +402,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logInLinkTest -->
-        <test-method signature="signUp_With_Invalid_Email_Test()[pri:3, instance:com.mailchimp.automation.testcases.SignUpPageTest@610f7aa]" started-at="2018-08-13T16:11:20Z" name="signUp_With_Invalid_Email_Test" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.DashBoardPageTest.clickToHelpLink()'><b>clickToHelpLink</b><br>Test class: com.mailchimp.automation.testcases.DashBoardPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace210281271", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace210281271'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -243,20 +443,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUp_With_Invalid_Email_Test -->
-        <test-method signature="signUp_With_Invalid_Email_And_Existing_UserName_Test()[pri:4, instance:com.mailchimp.automation.testcases.SignUpPageTest@610f7aa]" started-at="2018-08-13T16:11:20Z" name="signUp_With_Invalid_Email_And_Existing_UserName_Test" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.DashBoardPageTest.clickToListlink()'><b>clickToListlink</b><br>Test class: com.mailchimp.automation.testcases.DashBoardPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1387210478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1387210478'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -281,20 +484,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUp_With_Invalid_Email_And_Existing_UserName_Test -->
-        <test-method signature="signUp_With_Valid_Email_And_UserName_Test()[pri:5, instance:com.mailchimp.automation.testcases.SignUpPageTest@610f7aa]" started-at="2018-08-13T16:11:20Z" name="signUp_With_Valid_Email_And_UserName_Test" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.DashBoardPageTest.clickToLogout()'><b>clickToLogout</b><br>Test class: com.mailchimp.automation.testcases.DashBoardPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace782505238", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace782505238'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -319,22 +525,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUp_With_Valid_Email_And_UserName_Test -->
-      </class> <!-- com.mailchimp.automation.testcases.SignUpPageTest -->
-      <class name="com.mailchimp.automation.testcases.CampaignPageTest">
-        <test-method signature="createCampaign()[pri:1, instance:com.mailchimp.automation.testcases.CampaignPageTest@3098cf3b]" started-at="2018-08-13T16:11:20Z" name="createCampaign" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.DashBoardPageTest.clickToNotification()'><b>clickToNotification</b><br>Test class: com.mailchimp.automation.testcases.DashBoardPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1846501247", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1846501247'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -359,26 +566,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createCampaign -->
-      </class> <!-- com.mailchimp.automation.testcases.CampaignPageTest -->
-      <class name="com.mailchimp.automation.testcases.AnnotationTest">
-        <test-method is-config="true" signature="clefaanUp()[pri:0, instance:com.mailchimp.automation.testcases.AnnotationTest@175b9425]" started-at="2018-08-13T16:11:20Z" name="clefaanUp" finished-at="2018-08-13T16:11:20Z" duration-ms="16" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clefaanUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.CampaignPageTest@3098cf3b]" started-at="2018-08-13T16:11:20Z" name="setUp" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.DashBoardPageTest.clickToProfile()'><b>clickToProfile</b><br>Test class: com.mailchimp.automation.testcases.DashBoardPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace501705927", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace501705927'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -403,64 +607,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="fas()[pri:0, instance:com.mailchimp.automation.testcases.AnnotationTest@175b9425]" started-at="2018-08-13T16:11:20Z" name="fas" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fas -->
-        <test-method is-config="true" signature="testBeforeTest()[pri:0, instance:com.mailchimp.automation.testcases.TestPageBase@6a03bcb1]" started-at="2018-08-13T16:11:20Z" name="testBeforeTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBeforeTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.ListPageTest@57250572]" started-at="2018-08-13T16:11:20Z" name="setUp" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.TemplatePageTest@17a7f733]" started-at="2018-08-13T16:11:20Z" name="setUp" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.HomePageTest@5609159b]" started-at="2018-08-13T16:11:20Z" name="setUp" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.SignUpPageTest@610f7aa]" started-at="2018-08-13T16:11:20Z" name="setUp" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768]" started-at="2018-08-13T16:11:20Z" name="setUp" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.LoginPageTest@2118cddf]" started-at="2018-08-13T16:11:20Z" name="setUp" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.AnnotationTest@175b9425]" started-at="2018-08-13T16:11:20Z" name="setUp" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.AnnotationTest@175b9425]" started-at="2018-08-13T16:11:20Z" name="setUp" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.AnnotationTest@175b9425]" started-at="2018-08-13T16:11:20Z" name="setUp" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="f1()[pri:0, instance:com.mailchimp.automation.testcases.AnnotationTest@175b9425]" started-at="2018-08-13T16:11:20Z" name="f1" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.DashBoardPageTest.clickToReport()'><b>clickToReport</b><br>Test class: com.mailchimp.automation.testcases.DashBoardPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1412794598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1412794598'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -485,20 +648,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f1 -->
-        <test-method signature="f2()[pri:0, instance:com.mailchimp.automation.testcases.AnnotationTest@175b9425]" started-at="2018-08-13T16:11:20Z" name="f2" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.DashBoardPageTest.clickToTemplateLink()'><b>clickToTemplateLink</b><br>Test class: com.mailchimp.automation.testcases.DashBoardPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace785570251", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace785570251'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -523,24 +689,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f2 -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.AnnotationTest@175b9425]" started-at="2018-08-13T16:11:20Z" name="setUp" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="f3()[pri:0, instance:com.mailchimp.automation.testcases.AnnotationTest@175b9425]" started-at="2018-08-13T16:11:20Z" name="f3" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.CampaignPageTest.createCampaign()'><b>createCampaign</b><br>Test class: com.mailchimp.automation.testcases.CampaignPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1483298597", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1483298597'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -565,20 +730,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f3 -->
-        <test-method signature="f4()[pri:0, instance:com.mailchimp.automation.testcases.AnnotationTest@175b9425]" started-at="2018-08-13T16:11:20Z" name="f4" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.CampaignPageTest@3098cf3b</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.ListPageTest.createList()'><b>createList</b><br>Test class: com.mailchimp.automation.testcases.ListPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2082781203", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2082781203'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -603,24 +771,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f4 -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mailchimp.automation.testcases.AnnotationTest@175b9425]" started-at="2018-08-13T16:11:20Z" name="setUp" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="f5()[pri:0, instance:com.mailchimp.automation.testcases.AnnotationTest@175b9425]" started-at="2018-08-13T16:11:20Z" name="f5" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.ListPageTest@57250572</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.TemplatePageTest.createList()'><b>createList</b><br>Test class: com.mailchimp.automation.testcases.TemplatePageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1537471098", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1537471098'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -645,58 +812,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f5 -->
-        <test-method is-config="true" signature="GoToHome()[pri:0, instance:com.mailchimp.automation.testcases.CampaignPageTest@3098cf3b]" started-at="2018-08-13T16:11:20Z" name="GoToHome" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GoToHome -->
-        <test-method is-config="true" signature="fass()[pri:0, instance:com.mailchimp.automation.testcases.AnnotationTest@175b9425]" started-at="2018-08-13T16:11:20Z" name="fass" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fass -->
-        <test-method is-config="true" signature="GoToHome()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768]" started-at="2018-08-13T16:11:20Z" name="GoToHome" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GoToHome -->
-        <test-method is-config="true" signature="GoToHome()[pri:0, instance:com.mailchimp.automation.testcases.ListPageTest@57250572]" started-at="2018-08-13T16:11:20Z" name="GoToHome" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GoToHome -->
-        <test-method is-config="true" signature="GoToHome()[pri:0, instance:com.mailchimp.automation.testcases.LoginPageTest@2118cddf]" started-at="2018-08-13T16:11:20Z" name="GoToHome" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GoToHome -->
-        <test-method is-config="true" signature="GoToHome()[pri:0, instance:com.mailchimp.automation.testcases.TemplatePageTest@17a7f733]" started-at="2018-08-13T16:11:20Z" name="GoToHome" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GoToHome -->
-        <test-method is-config="true" signature="testAfterTest()[pri:0, instance:com.mailchimp.automation.testcases.TestPageBase@6a03bcb1]" started-at="2018-08-13T16:11:20Z" name="testAfterTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAfterTest -->
-        <test-method is-config="true" signature="GoToHome()[pri:0, instance:com.mailchimp.automation.testcases.SignUpPageTest@610f7aa]" started-at="2018-08-13T16:11:20Z" name="GoToHome" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GoToHome -->
-        <test-method is-config="true" signature="cleaanUp()[pri:0, instance:com.mailchimp.automation.testcases.AnnotationTest@175b9425]" started-at="2018-08-13T16:11:20Z" name="cleaanUp" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleaanUp -->
-      </class> <!-- com.mailchimp.automation.testcases.AnnotationTest -->
-      <class name="com.mailchimp.automation.testcases.LoginPageTest">
-        <test-method signature="logInPageTitleTest()[pri:1, instance:com.mailchimp.automation.testcases.LoginPageTest@2118cddf]" started-at="2018-08-13T16:11:20Z" name="logInPageTitleTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.TemplatePageTest@17a7f733</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.f1()'><b>f1</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1523553211", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1523553211'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -721,20 +853,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logInPageTitleTest -->
-        <test-method signature="loginElementTextTest()[pri:2, instance:com.mailchimp.automation.testcases.LoginPageTest@2118cddf]" started-at="2018-08-13T16:11:20Z" name="loginElementTextTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.AnnotationTest@175b9425</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.f2()'><b>f2</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1825738663", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1825738663'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -759,20 +894,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginElementTextTest -->
-        <test-method signature="keepMeLogInElementTextTest()[pri:3, instance:com.mailchimp.automation.testcases.LoginPageTest@2118cddf]" started-at="2018-08-13T16:11:20Z" name="keepMeLogInElementTextTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.AnnotationTest@175b9425</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.f3()'><b>f3</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1194893830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1194893830'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -797,20 +935,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- keepMeLogInElementTextTest -->
-        <test-method signature="needAccountElementTextTest()[pri:4, instance:com.mailchimp.automation.testcases.LoginPageTest@2118cddf]" started-at="2018-08-13T16:11:20Z" name="needAccountElementTextTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.AnnotationTest@175b9425</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.f4()'><b>f4</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace503642634", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace503642634'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -835,20 +976,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- needAccountElementTextTest -->
-        <test-method signature="linkCreateAccountTest()[pri:5, instance:com.mailchimp.automation.testcases.LoginPageTest@2118cddf]" started-at="2018-08-13T16:11:20Z" name="linkCreateAccountTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.AnnotationTest@175b9425</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AnnotationTest.f5()'><b>f5</b><br>Test class: com.mailchimp.automation.testcases.AnnotationTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace416841088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace416841088'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -873,20 +1017,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- linkCreateAccountTest -->
-        <test-method signature="loginWithBlankInformationTest()[pri:6, instance:com.mailchimp.automation.testcases.LoginPageTest@2118cddf]" started-at="2018-08-13T16:11:20Z" name="loginWithBlankInformationTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.AnnotationTest@175b9425</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.LoginPageTest.keepMeLogInElementTextTest()'><b>keepMeLogInElementTextTest</b><br>Test class: com.mailchimp.automation.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace455785638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace455785638'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -911,20 +1058,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithBlankInformationTest -->
-        <test-method signature="loginWithoutPasswordTest()[pri:7, instance:com.mailchimp.automation.testcases.LoginPageTest@2118cddf]" started-at="2018-08-13T16:11:20Z" name="loginWithoutPasswordTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.LoginPageTest@2118cddf</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.LoginPageTest.linkCreateAccountTest()'><b>linkCreateAccountTest</b><br>Test class: com.mailchimp.automation.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1213818572", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1213818572'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -949,20 +1099,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithoutPasswordTest -->
-        <test-method signature="loginWithoutUserNameTest()[pri:8, instance:com.mailchimp.automation.testcases.LoginPageTest@2118cddf]" started-at="2018-08-13T16:11:20Z" name="loginWithoutUserNameTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.LoginPageTest@2118cddf</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.LoginPageTest.linkForgetPasswordTest()'><b>linkForgetPasswordTest</b><br>Test class: com.mailchimp.automation.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace424398527", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace424398527'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -987,20 +1140,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithoutUserNameTest -->
-        <test-method signature="loginWithWrongInfoTest()[pri:9, instance:com.mailchimp.automation.testcases.LoginPageTest@2118cddf]" started-at="2018-08-13T16:11:20Z" name="loginWithWrongInfoTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.LoginPageTest@2118cddf</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.SignUpPageTest.logInLinkTest()'><b>logInLinkTest</b><br>Test class: com.mailchimp.automation.testcases.SignUpPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1567705314", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1567705314'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1025,20 +1181,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithWrongInfoTest -->
-        <test-method signature="loginWithValidInfoTest()[pri:10, instance:com.mailchimp.automation.testcases.LoginPageTest@2118cddf]" started-at="2018-08-13T16:11:20Z" name="loginWithValidInfoTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.SignUpPageTest@610f7aa</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.LoginPageTest.logInPageTitleTest()'><b>logInPageTitleTest</b><br>Test class: com.mailchimp.automation.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1337192014", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1337192014'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1063,20 +1222,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidInfoTest -->
-        <test-method signature="logoutFromDashBoardAndForgotUserNameTest()[pri:11, instance:com.mailchimp.automation.testcases.LoginPageTest@2118cddf]" started-at="2018-08-13T16:11:20Z" name="logoutFromDashBoardAndForgotUserNameTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.LoginPageTest@2118cddf</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.LoginPageTest.loginElementTextTest()'><b>loginElementTextTest</b><br>Test class: com.mailchimp.automation.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1328238652", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1328238652'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1101,20 +1263,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromDashBoardAndForgotUserNameTest -->
-        <test-method signature="linkForgetPasswordTest()[pri:12, instance:com.mailchimp.automation.testcases.LoginPageTest@2118cddf]" started-at="2018-08-13T16:11:20Z" name="linkForgetPasswordTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.LoginPageTest@2118cddf</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.LoginPageTest.loginWithBlankInformationTest()'><b>loginWithBlankInformationTest</b><br>Test class: com.mailchimp.automation.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1497018177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1497018177'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1139,22 +1304,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- linkForgetPasswordTest -->
-      </class> <!-- com.mailchimp.automation.testcases.LoginPageTest -->
-      <class name="com.mailchimp.automation.testcases.DashBoardPageTest">
-        <test-method signature="checkTitle()[pri:0, instance:com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768]" started-at="2018-08-13T16:11:20Z" name="checkTitle" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.LoginPageTest@2118cddf</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.LoginPageTest.loginWithValidInfoTest()'><b>loginWithValidInfoTest</b><br>Test class: com.mailchimp.automation.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace977552154", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace977552154'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1179,20 +1345,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkTitle -->
-        <test-method signature="clickToReport()[pri:1, instance:com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768]" started-at="2018-08-13T16:11:20Z" name="clickToReport" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.LoginPageTest@2118cddf</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.LoginPageTest.loginWithWrongInfoTest()'><b>loginWithWrongInfoTest</b><br>Test class: com.mailchimp.automation.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1055096410", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1055096410'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1217,20 +1386,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickToReport -->
-        <test-method signature="clickToListlink()[pri:2, instance:com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768]" started-at="2018-08-13T16:11:20Z" name="clickToListlink" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.LoginPageTest@2118cddf</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.LoginPageTest.loginWithoutPasswordTest()'><b>loginWithoutPasswordTest</b><br>Test class: com.mailchimp.automation.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1473205473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1473205473'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1255,20 +1427,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickToListlink -->
-        <test-method signature="clickToCampaignLink()[pri:3, instance:com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768]" started-at="2018-08-13T16:11:20Z" name="clickToCampaignLink" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.LoginPageTest@2118cddf</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.LoginPageTest.loginWithoutUserNameTest()'><b>loginWithoutUserNameTest</b><br>Test class: com.mailchimp.automation.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1128948651", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1128948651'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1293,20 +1468,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickToCampaignLink -->
-        <test-method signature="clickToTemplateLink()[pri:4, instance:com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768]" started-at="2018-08-13T16:11:20Z" name="clickToTemplateLink" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.LoginPageTest@2118cddf</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.LoginPageTest.logoutFromDashBoardAndForgotUserNameTest()'><b>logoutFromDashBoardAndForgotUserNameTest</b><br>Test class: com.mailchimp.automation.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1014982340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1014982340'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1331,20 +1509,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickToTemplateLink -->
-        <test-method signature="clickToHelpLink()[pri:5, instance:com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768]" started-at="2018-08-13T16:11:20Z" name="clickToHelpLink" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.LoginPageTest@2118cddf</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.LoginPageTest.needAccountElementTextTest()'><b>needAccountElementTextTest</b><br>Test class: com.mailchimp.automation.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1138410383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1138410383'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1369,20 +1550,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickToHelpLink -->
-        <test-method signature="clickToProfile()[pri:6, instance:com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768]" started-at="2018-08-13T16:11:20Z" name="clickToProfile" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.LoginPageTest@2118cddf</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.AboutPageTest.saveLeadershipList()'><b>saveLeadershipList</b><br>Test class: com.mailchimp.automation.testcases.AboutPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1947896119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1947896119'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1407,20 +1591,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickToProfile -->
-        <test-method signature="clickToAccount()[pri:7, instance:com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768]" started-at="2018-08-13T16:11:20Z" name="clickToAccount" finished-at="2018-08-13T16:11:20Z" duration-ms="15" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.AboutPageTest@68567e20</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.SignUpPageTest.signUpPageTitleTest()'><b>signUpPageTitleTest</b><br>Test class: com.mailchimp.automation.testcases.SignUpPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1201173334", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1201173334'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1445,20 +1632,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickToAccount -->
-        <test-method signature="clickToConnectedSite()[pri:8, instance:com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768]" started-at="2018-08-13T16:11:20Z" name="clickToConnectedSite" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.SignUpPageTest@610f7aa</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.SignUpPageTest.signUp_With_Invalid_Email_And_Existing_UserName_Test()'><b>signUp_With_Invalid_Email_And_Existing_UserName_Test</b><br>Test class: com.mailchimp.automation.testcases.SignUpPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1670546046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1670546046'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1483,20 +1673,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickToConnectedSite -->
-        <test-method signature="clickToNotification()[pri:9, instance:com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768]" started-at="2018-08-13T16:11:20Z" name="clickToNotification" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.SignUpPageTest@610f7aa</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.SignUpPageTest.signUp_With_Invalid_Email_Test()'><b>signUp_With_Invalid_Email_Test</b><br>Test class: com.mailchimp.automation.testcases.SignUpPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace195984832", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace195984832'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1521,20 +1714,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickToNotification -->
-        <test-method signature="clickToLogout()[pri:10, instance:com.mailchimp.automation.testcases.DashBoardPageTest@21b2e768]" started-at="2018-08-13T16:11:20Z" name="clickToLogout" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.SignUpPageTest@610f7aa</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.SignUpPageTest.signUp_With_Valid_Email_And_UserName_Test()'><b>signUp_With_Valid_Email_And_UserName_Test</b><br>Test class: com.mailchimp.automation.testcases.SignUpPageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace875313400", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace875313400'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1559,22 +1755,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickToLogout -->
-      </class> <!-- com.mailchimp.automation.testcases.DashBoardPageTest -->
-      <class name="com.mailchimp.automation.testcases.HomePageTest">
-        <test-method signature="verifyHomePageTitleTest()[pri:1, instance:com.mailchimp.automation.testcases.HomePageTest@5609159b]" started-at="2018-08-13T16:11:20Z" name="verifyHomePageTitleTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.SignUpPageTest@610f7aa</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.HomePageTest.verifyBlogTitleTest()'><b>verifyBlogTitleTest</b><br>Test class: com.mailchimp.automation.testcases.HomePageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1560940633", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1560940633'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1599,20 +1796,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method signature="verifyPricingTitleTest()[pri:2, instance:com.mailchimp.automation.testcases.HomePageTest@5609159b]" started-at="2018-08-13T16:11:20Z" name="verifyPricingTitleTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.HomePageTest@5609159b</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.HomePageTest.verifyFeaturesTitleTest()'><b>verifyFeaturesTitleTest</b><br>Test class: com.mailchimp.automation.testcases.HomePageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace236304360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace236304360'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1637,20 +1837,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPricingTitleTest -->
-        <test-method signature="verifyLearningTitleTest()[pri:4, instance:com.mailchimp.automation.testcases.HomePageTest@5609159b]" started-at="2018-08-13T16:11:20Z" name="verifyLearningTitleTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.HomePageTest@5609159b</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.HomePageTest.verifyHomePageTitleTest()'><b>verifyHomePageTitleTest</b><br>Test class: com.mailchimp.automation.testcases.HomePageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2077528955", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2077528955'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1675,20 +1878,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLearningTitleTest -->
-        <test-method signature="verifyFeaturesTitleTest()[pri:3, instance:com.mailchimp.automation.testcases.HomePageTest@5609159b]" started-at="2018-08-13T16:11:20Z" name="verifyFeaturesTitleTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.HomePageTest@5609159b</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.HomePageTest.verifyLearningTitleTest()'><b>verifyLearningTitleTest</b><br>Test class: com.mailchimp.automation.testcases.HomePageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace224100622", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace224100622'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1713,20 +1919,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFeaturesTitleTest -->
-        <test-method signature="verifyBlogTitleTest()[pri:5, instance:com.mailchimp.automation.testcases.HomePageTest@5609159b]" started-at="2018-08-13T16:11:20Z" name="verifyBlogTitleTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.HomePageTest@5609159b</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.HomePageTest.verifyLoginTitleTest()'><b>verifyLoginTitleTest</b><br>Test class: com.mailchimp.automation.testcases.HomePageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2087785333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2087785333'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1751,20 +1960,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBlogTitleTest -->
-        <test-method signature="verifyWhatsNewTitleTest()[pri:6, instance:com.mailchimp.automation.testcases.HomePageTest@5609159b]" started-at="2018-08-13T16:11:20Z" name="verifyWhatsNewTitleTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.HomePageTest@5609159b</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.HomePageTest.verifyPricingTitleTest()'><b>verifyPricingTitleTest</b><br>Test class: com.mailchimp.automation.testcases.HomePageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1876443073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1876443073'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1789,20 +2001,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWhatsNewTitleTest -->
-        <test-method signature="verifyLoginTitleTest()[pri:7, instance:com.mailchimp.automation.testcases.HomePageTest@5609159b]" started-at="2018-08-13T16:11:20Z" name="verifyLoginTitleTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.HomePageTest@5609159b</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.HomePageTest.verifySignUpTitleTest()'><b>verifySignUpTitleTest</b><br>Test class: com.mailchimp.automation.testcases.HomePageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace936653983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace936653983'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1827,20 +2042,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginTitleTest -->
-        <test-method signature="verifySignUpTitleTest()[pri:8, instance:com.mailchimp.automation.testcases.HomePageTest@5609159b]" started-at="2018-08-13T16:11:20Z" name="verifySignUpTitleTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.HomePageTest@5609159b</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.HomePageTest.verifySupportTitleTest()'><b>verifySupportTitleTest</b><br>Test class: com.mailchimp.automation.testcases.HomePageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace671471369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace671471369'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1865,20 +2083,23 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySignUpTitleTest -->
-        <test-method signature="verifySupportTitleTest()[pri:9, instance:com.mailchimp.automation.testcases.HomePageTest@5609159b]" started-at="2018-08-13T16:11:20Z" name="verifySupportTitleTest" finished-at="2018-08-13T16:11:20Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.HomePageTest@5609159b</td></tr>
+<tr>
+<td title='com.mailchimp.automation.testcases.HomePageTest.verifyWhatsNewTitleTest()'><b>verifyWhatsNewTitleTest</b><br>Test class: com.mailchimp.automation.testcases.HomePageTest</td>
+<td><div><pre>java.lang.NullPointerException
 	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
 	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
-	at com.mailchimp.automation.pages.PageBase.<init>(PageBase.java:11)
-	at com.mailchimp.automation.pages.HomePage.<init>(HomePage.java:40)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
+	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1421866327", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1421866327'><pre>java.lang.NullPointerException
+	at com.mailchimp.automation.suite.TestHelper.setUpDriver(TestHelper.java:37)
+	at com.mailchimp.automation.suite.TestHelper.getCurrentDriver(TestHelper.java:95)
+	at com.mailchimp.automation.pages.PageBase.&lt;init&gt;(PageBase.java:11)
+	at com.mailchimp.automation.pages.HomePage.&lt;init&gt;(HomePage.java:40)
 	at com.mailchimp.automation.testcases.CampaignPageTest.setUp(CampaignPageTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1903,13 +2124,9 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySupportTitleTest -->
-      </class> <!-- com.mailchimp.automation.testcases.HomePageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
-</testng-results>
+</pre></div></td>
+<td>0</td>
+<td>com.mailchimp.automation.testcases.HomePageTest@5609159b</td></tr>
+</table><p>
+</body>
+</html>
