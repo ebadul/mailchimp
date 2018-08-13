@@ -1,8 +1,6 @@
 package com.mailchimp.automation;
 
-import com.mailchimp.automation.util.SendMail;
 import com.mailchimp.automation.suite.TestStarter;
-import com.mailchimp.automation.model.TestStatusReportModel;
 import com.mailchimp.automation.suite.TestHelper;
 import com.mailchimp.automation.util.PropertySettings;
 

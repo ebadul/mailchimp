@@ -16,7 +16,7 @@ public class SignUpPageTest {
 		signUpPage = new HomePage().clickOnSignUp();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 3)
 	public void verifySignUpWithInvalidEmail() {
 		signUpPage.tryToSignUp("faizulcse@@gmail.com", "faizulssddd", "4shared-D");
 		signUpPage.clickGetStarted();
@@ -29,7 +29,7 @@ public class SignUpPageTest {
 		signUpPage.clickRefresh();
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 4)
 	public void verifySignUpWithExistingUser() {
 		signUpPage.tryToSignUp("rootnextsqa@@gmail.com", "rootnextsqa", "4shared-D");
 		signUpPage.clickGetStarted();
@@ -42,9 +42,9 @@ public class SignUpPageTest {
 		signUpPage.clickRefresh();
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 5)
 	public void verifySignUpValidInfo() {
-		signUpPage.tryToSignUp("hjfhjf30ll3h@gmail.com", "weaf3d00kk245wsw45", "4shared-D");
+		signUpPage.tryToSignUp("hjzqqlh@gmail.com", "wealqqn5wsw45", "4shared-D");
 		String s1 = signUpPage.getPassMsg();
 		signUpPage.clickGetStarted();
 		String s2 = signUpPage.getDoneMsg();

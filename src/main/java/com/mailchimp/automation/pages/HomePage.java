@@ -16,7 +16,6 @@ public class HomePage extends PageBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	
 	@FindBy(xpath="//a[contains(text(),'Features')]")WebElement featureLink;
 	@FindBy(xpath="//a[contains(text(),'Pricing')]")WebElement pricingLink;
 	@FindBy(xpath="//a[contains(text(),'Support')]")WebElement supportLink;
@@ -32,9 +31,10 @@ public class HomePage extends PageBase {
 		return driver.getTitle();
 	}
 
-	public ArrayList<String> getHomeHeaderElement() {
+	public ArrayList<String> getHomePageHeaderText() {
 		
 		ArrayList<String> arrayList =new ArrayList<String>();
+		waitFor(2);
 		arrayList.add(featureLink.getText());
 		arrayList.add(pricingLink.getText());
 		arrayList.add(supportLink.getText());
@@ -69,6 +69,7 @@ public class HomePage extends PageBase {
 	}
 
 	public LoginPage clickOnLoginLink() {
+		driver.get("https://mailchimp.com");
 		waitFor(1);
 		logInLink.click();
 		return new LoginPage();

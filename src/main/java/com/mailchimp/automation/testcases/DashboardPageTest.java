@@ -14,7 +14,7 @@ public class DashboardPageTest {
 
 	@BeforeMethod()
 	public void setUp() {
-		dashBoard = new LoginPage().loginAction();
+		dashBoard = new DashboardPage();
 	}
 
 	// @Test(priority = 2)

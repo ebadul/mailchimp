@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -19,15 +20,13 @@ public class HomePageTest {
 	// @test -- execute test case
 	// after each test case -- close the browser
 
-	@BeforeMethod
+	@BeforeClass
 	public void setUp() {
-
-		testUtil = new TestUtil();
 		homePage = new HomePage();
 	}
 
-	// @Test(priority=1)
-	@Test
+	@Test(priority = 1)
+
 	public void verifyHomePageTitleTest() {
 		String homePageTitle = homePage.verifyHomePageTitle();
 		System.out.println(homePageTitle);
@@ -35,11 +34,11 @@ public class HomePageTest {
 				"Home page title not matched");
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void verifyHomeHeaderElement() {
 
 		ArrayList<String> al, al2 = new ArrayList<String>();
-		al = homePage.getHomeHeaderElement();
+		al = homePage.getHomePageHeaderText();
 
 		al2.add("Features");
 		al2.add("Pricing");
@@ -49,7 +48,6 @@ public class HomePageTest {
 		al2.add("What's New");
 		al2.add("Sign Up Free");
 		al2.add("Log In");
-
 		System.out.println(al);
 		System.out.println(al2);
 		Assert.assertEquals(al, al2);
