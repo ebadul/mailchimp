@@ -4,6 +4,8 @@
     <test name="Test Automation MailChimp">
         <classes>
         	 <class name="com.mailchimp.automation.testcases.AboutPageTest"/>
+			 <class name="com.mailchimp.automation.testcases.AboutPageTest2"/>
+			 <class name="com.mailchimp.automation.testcases.AboutPageTest3"/>
         </classes>
     </test>
 </suite>
