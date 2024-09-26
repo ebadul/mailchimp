@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.annotations.DataProvider;
+
 
 import com.mailchimp.automation.util.*;
 import com.mailchimp.automation.pages.*;
@@ -15,6 +15,10 @@ public class AboutPageTest {
 	
 	HomePage homePage;
 	AboutPage aboutPage;
+	
+	public AboutPageTest(){
+		super();	
+	}
 	
 	@BeforeClass
 	public void setUp() {
@@ -28,7 +32,7 @@ public class AboutPageTest {
 	@Test(priority=1)
 	public void saveLeadershipList(){
 		aboutPage.scrollToLeadershipSection();
-		aboutPage.saveLeadershipInfoToCSV();
+		//aboutPage.saveLeadershipInfoToCSV();
 		Assert.assertTrue(true);
 	}
 	

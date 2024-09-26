@@ -4,12 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import com.mailchimp.automation.util.CSVFileHandler;
-import com.mailchimp.automation.util.TestUtil;
 import com.mailchimp.automation.model.LeadersInfo;
 
 
